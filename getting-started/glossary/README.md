@@ -11,4 +11,5 @@ description: This page contains a directory of the different glossary pages avai
 * [Monitoring systems properties](../../administration/monitoring/monitoring-reports/monitoring-systems-properties.md)
 * [Monitoring metircs](../../administration/monitoring/monitoring-reports/monitoring-metrics.md)
 * [Permissions list](permissions-list.md)
+* [Index](index.md)
 
