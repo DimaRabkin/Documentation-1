@@ -32,13 +32,9 @@ You can also use Upsolver through [AWS Marketplace](https://aws.amazon.com/marke
 
 If you don’t have access to your AWS or Azure account, you can [**send the page**](https://upsolver.gitbook.io/upsolver-1/getting-started/try-upsolver#send-this-page) to someone else on your team.
 
-4. Select a **region** and click **Continue**.
+4. You may choose between **Deploy to My AWS Account** which deploys Upsolver in your own VPC or **Multi-Tenant Deployment** - Upsolver hosts and manages the compute.  Click [here](upsolver-concepts/deployment-models.md) for more information.
 
-By default, Upsolver deploys the servers for processing and running jobs on the Upsolver AWS account, but the data is never stored there.
-
-**See:** [Integrating Upsolver on your AWS account](https://upsolver.gitbook.io/upsolver-1/getting-started/start-using-upsolver) if you would prefer to deploy the processing on your own AWS account.
-
-5. Click **Launch Integration**.
+5. Make sure you allow appropriate access to your AWS account and click **CONTINUE**.
 
 6. In the **AWS CloudFormation page**, check the **I acknowledge** statement and click **Create Stack**.
 
