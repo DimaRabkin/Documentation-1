@@ -91,6 +91,5 @@ description: >-
 
 ## Support
 
-* [Login Upsolver support portal](support/login-upsolver-support-portal.md)
-* [Create and manage your support case]()
+* [Upsolver support portal](support/login-upsolver-support-portal.md)
 
