@@ -28,9 +28,9 @@ You can also use Upsolver through [AWS Marketplace](https://aws.amazon.com/marke
 
 2. Enter your contact details and click **Sign Up**. An email message will be sent to the email account specified for verification.
 
-3. When you log in, you will be prompted to **Integrate Upsolver with your AWS Account**.
+3. When you log in, you may choose between deploying in Amazon AWS or Microsoft Azure
 
-If you don’t have access to your AWS account, you can [**send the page**](https://upsolver.gitbook.io/upsolver-1/getting-started/try-upsolver#send-this-page) to someone else on your team.
+If you don’t have access to your AWS or Azure account, you can [**send the page**](https://upsolver.gitbook.io/upsolver-1/getting-started/try-upsolver#send-this-page) to someone else on your team.
 
 4. Select a **region** and click **Continue**.
 
