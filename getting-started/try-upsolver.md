@@ -46,7 +46,7 @@ You can now work in Upsolver.
 
 ## Send this page <a id="send-this-page"></a>
 
-1. Click **Send This Page**.
+1. Click **SEND THIS PAGE.**
 
 2. \(Optional\) Add any **S3 Buckets Containing Your Data** and **Kinesis Streams Containing Your Data**.
 
