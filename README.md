@@ -8,7 +8,7 @@ description: >-
 
 ## Getting started 
 
-* [Sign up for Upsolver for free](getting-started/try-upsolver.md)
+* [Try Upsolver for free](getting-started/try-upsolver.md)
 * [Start using Upsolver](getting-started/start-using-upsolver/)
 * [Upsolver concepts](getting-started/upsolver-concepts/)
 * [Upsolver Amazon AWS deployment guide](getting-started/upsolver-aws-deployment-guide/)
