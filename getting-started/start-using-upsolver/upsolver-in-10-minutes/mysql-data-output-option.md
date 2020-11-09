@@ -1,10 +1,11 @@
 ---
 description: >-
-  This option allows you to integrate with a local environment instead of
-  integrating with AWS Athena.
+  Process streaming data from end-to-end within 10 minutes. The data source is
+  an Amazon S3 bucket (updated continuously). Upsolver processes the data and
+  loads to your local MySQL environment.
 ---
 
-# Local MySQL data output option
+# Local MySQL data output
 
 ## \*\*\*\*
 

@@ -1,4 +1,11 @@
-# Amazon Athena output option
+---
+description: >-
+  Process streaming data from end-to-end within 10 minutes. The data source is
+  an Amazon S3 bucket (updated continuously). Upsolver processes the data and
+  loads to Amazon Athena table.
+---
+
+# Amazon Athena data output
 
 ## Create a data source
 
