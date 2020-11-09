@@ -129,5 +129,3 @@ The integration should table about 1 minute. and you will see **CREATE\_COMPLETE
 
 ## **Verify your data in Amazon Athena**
 
-![](https://lh5.googleusercontent.com/0fxWkWrTxadsR-uuIkp9Tny0BVu2iLcCcNBBa_G5SN6wi6yOvf64W__KBgEHb24vjTWHBStlUU4LlwWNq_yqszCcdvc_c4ITRmULBgt209OxbuWtUjhS4wBRdZ0r0Dzo6lN1GVlW)
-
