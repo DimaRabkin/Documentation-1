@@ -58,7 +58,6 @@ If you don’t have an existing MySQL connection, you can install it locally on 
 * Run the following commands in your MySQL environment.
 
 ```bash
-SET GLOBAL local_infile=1;
 CREATE database dev;
 ```
 
