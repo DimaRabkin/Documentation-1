@@ -29,6 +29,6 @@ As a Cloud native solution, Upsolver does not store any data locally on the serv
 Upsolver integrates with Cloud provider’s native KMS solutions. The users have the following three options:
 
 1. Default encryption - existing S3 default configuration
-2. Server side encryption using server side key - provide the key’s ARN to Upsolver
-3. User manually provide the key material if they key is not being managed in KMS
+2. Server-side encryption using Amazon KMS \(SSE-KMS\) - User provides the key’s ARN
+3. Server-side encryption using Customer-Managed Keys \(SSE-CME\) - User provides the encryption key
 
