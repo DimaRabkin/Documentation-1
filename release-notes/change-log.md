@@ -6,6 +6,14 @@ description: This article tracks the changes and updates to Upsolver.
 
 ## 2020
 
+## 2020/11/08
+ * QuboleClient: fix a bug in partition values with zero leading
+ * SQL: Support DELETE WHERE syntax for Is Delete Field in Hive output with upserts
+ * API: Fixed a bug with adding filter in aggregated output
+ * Record To Json Function: Bug fixes
+ * Cluster syncronization: Stability fixes
+ * Hive output: Fixed a bug that caused the output to stuck after an edit
+ 
 ### 2020/11/01
 
 * Deployment: Allow deploy Upsolver servers to Azure
