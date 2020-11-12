@@ -99,6 +99,7 @@ If you don’t have an existing MySQL connection, you can install it locally on 
 
 ```bash
 CREATE database dev;
+set local-infile = 1;
 ```
 
 * After MySQL is running locally, use [ngrok](https://dashboard.ngrok.com/get-started/setup) to  start a TCP tunnel forwarding to your local port 3306 by running `./ngrok tcp 3306` You will have the forwarding information below:
