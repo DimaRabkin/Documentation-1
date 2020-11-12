@@ -13,9 +13,9 @@ To help you get started with Upsolver, you can try it out for free. You can choo
 
 ## Output to an environment hosted by a cloud provider
 
-[MySQL \(AWS RDS\) data output](mysql-aws-rds-data-output.md)
-
 [Amazon Athena data output](amazon-athena-output-option.md)
+
+[MySQL \(AWS RDS\) data output](mysql-aws-rds-data-output.md)
 
 ## Output to an environment on your local machine
 
