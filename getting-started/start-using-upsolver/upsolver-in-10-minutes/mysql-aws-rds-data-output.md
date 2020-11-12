@@ -33,7 +33,7 @@ To help you get started with Upsolver, you can try it out for free. You can choo
 
 ##  **Create a data output**
 
-1. Click on **NEW OUTPUT** on the upper right corner. \(You can also get to the output screen by clicking on OUTPUTS &gt; NEW\)
+1. Click on **NEW OUTPUT** on the upper right corner. \(You can also get to the output screen by clicking on **OUTPUTS &gt; NEW**\)
 
 ![](https://lh4.googleusercontent.com/MWKDM4NzS3bsF93Pq5DZ-4nd5QV6B7JXOS2cA1N8vy92qij_fPmPTPeilDb1XiW3DjcZMc8L0YC-62snOK6wiXnefjBe-Ppku7s9ymdk3M5sS7NEUNiYPpJaQeHTe5mYgkfgBHV0)
 
@@ -45,7 +45,7 @@ To help you get started with Upsolver, you can try it out for free. You can choo
 
 ![](https://lh5.googleusercontent.com/pwqXwMAeu4kndQzv2fMDh4-N5rB_q6S6vpsR10OEITDHI4aatdyMWBEfhO8dpdBuaxsa5hVm1195UMzW9qM38Jnb6miZ49_RR8Koi7LBaRr8v7Y2P68vzdsJFE5Ck4Ppi6ByzegG)
 
-4. Expand the **payload** field. Add a field to your output by clicking on the **+** sign next to **eventName**. The field that we’re adding is. data.payload.eventName.
+4. Expand the **payload** field. Add a field to your output by clicking on the **+** sign next to **eventName**. The field that we’re adding is. **data.payload.eventName**.
 
 ![](https://lh4.googleusercontent.com/kYfGKdqytOPUi7-qXFq-lStbLuIpgE1bv8L_Q-gOPypxSCCCNmpcK7Wk-FtVcYA9d_BQKMbAzg8_Cjb36rumK2Z-QC_m921h05G4hRnss1Qxvtc1x3H_vU8ZwMc_qnOXKqVpnvAE)
 
@@ -55,7 +55,9 @@ To help you get started with Upsolver, you can try it out for free. You can choo
 
 ![](https://lh4.googleusercontent.com/v_6Rqnc7nFQq3xCUF4DBwELml7m1ZhvPkZIBpIZ6kg7pLHIaO1oJchci6FFf4xX-xKAswiu6GemKqHAH5_ztLKOAmh8FZa-XSthejIQDOtXmSsP-0cEt59NMJkzxqmcUEZJNPBjo)
 
-2. Transform data.clientEventTime to from unix epoch to human readable format. Click on **Add Calculated Field** on the upper left and find the **TO\_DATE** function click on **SELECT**. Enter **data.clientEventTime** in the **DATETIME** box and give the field a **NAME** called **event\_time**. Click on **PREVIEW** to make sure the date looks right and click on **SAVE**. 
+2. Transform **data.clientEventTime** to from unix epoch to human readable format in UTC. Click on **Add Calculated Field** on the upper left and find the **TO\_DATE** function, then click on **SELECT**. Enter **data.clientEventTime** in the **DATETIME** box and give the field a **NAME** called **event\_time**. Click on **PREVIEW** to make sure the date looks right and click on **SAVE**. 
+
+![Click on Add Calculated Field](../../../.gitbook/assets/image%20%28161%29.png)
 
 ![Add Calculated Field](../../../.gitbook/assets/image%20%28151%29.png)
 
@@ -63,13 +65,21 @@ To help you get started with Upsolver, you can try it out for free. You can choo
 
 ![Convert data.clientEventTime to UTC time named event\_time. Click on PREVIW and SAVE.](../../../.gitbook/assets/image%20%28153%29.png)
 
-3. Add **event\_time** to your output by clicking on **+** next to the field. 
+![Find the TO\_DATE\(\) function and click on SELECT](../../../.gitbook/assets/image%20%28160%29.png)
 
-![](../../../.gitbook/assets/czjgup6d4l.gif)
+![Convert data.clientEventTime and to human readable format in UTC. Click on PREVIEW and SAVE. ](../../../.gitbook/assets/image%20%28159%29.png)
+
+3. Add **event\_time** to your output by clicking on **+** next to the field. 
 
 4. Add a count for each event by clicking on **Make Aggregated &gt; OK &gt; Add Aggregation**. Click on **SELECT** next to **COUNT \(\*\)**  and click on **SAVE**.
 
-![](../../../.gitbook/assets/zgtazoayjx.gif)
+![Click on Make Aggregated](../../../.gitbook/assets/image%20%28162%29.png)
+
+![Click OK](../../../.gitbook/assets/image%20%28156%29.png)
+
+![Click on Add Aggregation and SELECT COUNT\(\*\)](../../../.gitbook/assets/image%20%28158%29.png)
+
+![Click on SAVE](../../../.gitbook/assets/image%20%28154%29.png)
 
 {% hint style="info" %}
 Click over to the **SQL tab** on the upper right hand corner. Keep in mind all changes that are made in the SQL view will also be represented in the UI view and vice-versa. You can see the work from the UI automatically generated a SELECT statement. Click on **PREVIEW** to ensure data looks correct.
@@ -100,10 +110,12 @@ Make sure you have the correct inbound rule configured for the MySQL \(RDS\) sec
 
 ![](../../../.gitbook/assets/image%20%2857%29.png)
 
-5. Use the slider bar or manually input the last day of data. Keep in mind that leaving ENDING AT as Never means it's a continuous data stream. New data will be streamed as they appear. click on **DEPLOY**. Click on OK if a warning appears.  
+5. Use the sliding bar to only load from the data from last day click on **DEPLOY**. Keep in mind that **ENDING AT** set as **Never** means it's a continuous data stream. Click on OK if a warning appears.  
 
 
 ![](../../../.gitbook/assets/image%20%28150%29.png)
+
+![](../../../.gitbook/assets/image%20%28155%29.png)
 
 6. Upsolver starts outputting the data to MySQL. You can keep track of the output status by clicking on PROGRESS. Wait for a moment for the data to output.
 
@@ -112,6 +124,8 @@ Make sure you have the correct inbound rule configured for the MySQL \(RDS\) sec
 ## **Verify your data in MySQL**
 
 ![](../../../.gitbook/assets/image%20%28152%29.png)
+
+![](../../../.gitbook/assets/image%20%28157%29.png)
 
 
 

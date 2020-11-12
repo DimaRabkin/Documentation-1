@@ -45,17 +45,17 @@ To help you get started with Upsolver, you can try it out for free. You can choo
 
 ![](../../../.gitbook/assets/image%20%288%29.png)
 
-4. Expand **payload** on the left hand side. Add a field to your output by clicking on the **+** sign next to the fields. The field that we’re adding is data.payload.**eventName**
+4. Expand **payload** on the left hand side. Add a field to your output by clicking on the **+** sign next to the fields. The field that we’re adding is **data.payload.eventName**
 
 ![](https://lh4.googleusercontent.com/kYfGKdqytOPUi7-qXFq-lStbLuIpgE1bv8L_Q-gOPypxSCCCNmpcK7Wk-FtVcYA9d_BQKMbAzg8_Cjb36rumK2Z-QC_m921h05G4hRnss1Qxvtc1x3H_vU8ZwMc_qnOXKqVpnvAE)
 
 ## **Data transformation**
 
-1. Rename the fields by clicking on the field under **SCHEMA COLUMN** and rename **payload.eventame** to **event\_name**
+1. Rename the fields by clicking on the field under **SCHEMA COLUMN** and rename **payload.eventname** to **event\_name**
 
 ![](https://lh4.googleusercontent.com/v_6Rqnc7nFQq3xCUF4DBwELml7m1ZhvPkZIBpIZ6kg7pLHIaO1oJchci6FFf4xX-xKAswiu6GemKqHAH5_ztLKOAmh8FZa-XSthejIQDOtXmSsP-0cEt59NMJkzxqmcUEZJNPBjo)
 
-2. Transform data.clientEventTime to from unix epoch to human readable format. Click on **Add Calculated Field** on the upper left and find the **TO\_DATE** function click on **SELECT**. Enter **data.clientEventTime** in the **DATETIME** box and give the field a **NAME** called **event\_time**. Click on **PREVIEW** to make sure the date looks right and click on **SAVE**.
+2. Transform **data.clientEventTime** to from unix epoch to human readable format. Click on **Add Calculated Field** on the upper left and find the **TO\_DATE** function, then click on **SELECT**. Enter **data.clientEventTime** in the **DATETIME** box and give the field a **NAME** called **event\_time**. Click on **PREVIEW** to make sure the date looks right and click on **SAVE**.
 
 ![](https://lh4.googleusercontent.com/f25W44WwYgJoAEeRl7qbPUJWaou9nw9HdNm4yAG0EMpFP1SICxEnpnGgTb7lyKHOcSmFGIlsHjkPOA4bBDZDFFl4zsm3SCQ9aXC8pLXwCLdLdGlV5jMNb-2Xu2odxMLIh032F6wW)
 
@@ -125,7 +125,7 @@ The integration should table about 1 minute. and you will see **CREATE\_COMPLETE
 
 ![](../../../.gitbook/assets/image%20%28119%29.png)
 
-8. Upsolver starts outputting the data to Athena. Wait for a moment for the data to write to the Amazon Athena table. This might take a few minutes. You can keep track of progress under the **PROGRESS** tab.
+8. Upsolver starts outputting the data to Athena. Wait for the data to write to the Amazon Athena table. This might take several minutes. You can keep track of progress under the **PROGRESS** tab.
 
 ![](../../../.gitbook/assets/image%20%2831%29.png)
 

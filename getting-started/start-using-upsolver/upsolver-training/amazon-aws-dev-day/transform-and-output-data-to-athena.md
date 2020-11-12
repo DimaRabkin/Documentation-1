@@ -106,7 +106,7 @@ Click over to the **SQL** tab by clicking SQL on the upper right corner.
 All of the transformations from previous steps are expressed as SQL. You will see that the existing mappings and transformations are expressed as SQL query. Any changes you make in the SQL view will also be represented in the UI view and vice-versa. 
 {% endhint %}
 
-Add a simple calculation field `data.netTotal + data.salesTax AS order_total:DOUBLE`  directly to the SQL. Notice that the added field is automatically reflected in the UI. Click on **PREVIEW** to make sure everything looks correct.
+Add a simple calculated field `data.netTotal + data.salesTax AS order_total:DOUBLE`  directly to the SQL. Notice that the added field is automatically reflected in the UI. Click on **PREVIEW** to make sure everything looks correct.
 
 ![All the changes in SQL is reflected in the UI and vice-versa](../../../../.gitbook/assets/8%20%281%29.gif)
 
@@ -143,11 +143,11 @@ Select **CONNECTION &gt; Create your first Amazon Athena Connection** and provid
 
 ![](../../../../.gitbook/assets/10.gif)
 
-Go back to the **RUN PARAMETER** screen by clicking on the **back button** of your browser **twice** and you should see **athena** populated under **CONNECTION**. Provide the **DATABASE NAME** that you want to output to. This example uses **upsolver**. TABLE NAME &gt; **orders** Click on **NEXT.**
+Go back to the **RUN PARAMETER** screen by clicking on the **back button** of your browser **twice** and you should see **athena** populated under **CONNECTION**. Provide the **DATABASE NAME** that you want to output to. This example uses **upsolver**. **TABLE NAME &gt;** **orders** Click on **NEXT.**
 
 ![](../../../../.gitbook/assets/11.gif)
 
-Leave everything on **RUN** shopping as default and click on **DEPLOY**.
+Leave everything on **RUN** **shopping** as default and click on **DEPLOY**.
 
 {% hint style="info" %}
 The output is continuous stream by leaving **ENDING AT** as **Never**, 
@@ -158,7 +158,7 @@ The output is continuous stream by leaving **ENDING AT** as **Never**,
 ## 6. Verify data in Amazon Athena
 
 {% hint style="info" %}
-In addition to transforming data to prepare it for querying, there is other behind-the-scenes optimizations that Upsolver performs to improve performance of Athena queries.  Not only does Upsolver utilize best practices such as using parquet format and partitioning data, but it also runs compaction to improve the underlying file size.  You can read more about compaction [here](https://www.upsolver.com/blog/small-file-problem-hdfs-s3).
+In addition to transforming data to prepare it for querying, there are other behind-the-scenes optimizations that Upsolver performs to improve performance of Athena queries.  Not only does Upsolver utilize best practices such as using Parquet format and partitioning data, but it also runs compaction to improve the underlying file size.  You can read more about compaction [here](https://www.upsolver.com/blog/small-file-problem-hdfs-s3).
 {% endhint %}
 
 Using Athena you can now query the data set created by Upsolver \(it may take a few minutes before the data is available\). Some sample queries that can be run are below:

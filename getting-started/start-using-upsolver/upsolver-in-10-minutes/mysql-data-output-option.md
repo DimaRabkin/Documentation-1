@@ -11,6 +11,8 @@ To help you get started with Upsolver, you can try it out for free. You can choo
 
 ## Create a data source
 
+## Create a data source
+
 1. Click on **DATA SOURCES &gt; NEW** to connect to various data sources. Upsolver works with both streaming and static data sources.
 
 ![](https://lh3.googleusercontent.com/VEBtmN-b2sXlGI8KbaKyeZtTRuXAqt4NkBess6US8LAc6NxoQAvGaQLhr_2lTKRH6V3Pe2JglaQvDSlA5hcep_DedbJFNS7ayYi2Cx-uozzUkzfZW79DqsqJutaVp6-f0l799Goz)
@@ -45,7 +47,7 @@ To help you get started with Upsolver, you can try it out for free. You can choo
 
 ![](https://lh5.googleusercontent.com/pwqXwMAeu4kndQzv2fMDh4-N5rB_q6S6vpsR10OEITDHI4aatdyMWBEfhO8dpdBuaxsa5hVm1195UMzW9qM38Jnb6miZ49_RR8Koi7LBaRr8v7Y2P68vzdsJFE5Ck4Ppi6ByzegG)
 
-4. Add a field to your output by clicking on the **+** sign next to the fields. The field that we’re adding is data.payload.**eventName**
+4. Expand the **payload** field. Add a field to your output by clicking on the **+** sign next to **eventName**. The field that we’re adding is. **data.payload.eventName**.
 
 ![](https://lh4.googleusercontent.com/kYfGKdqytOPUi7-qXFq-lStbLuIpgE1bv8L_Q-gOPypxSCCCNmpcK7Wk-FtVcYA9d_BQKMbAzg8_Cjb36rumK2Z-QC_m921h05G4hRnss1Qxvtc1x3H_vU8ZwMc_qnOXKqVpnvAE)
 
@@ -55,17 +57,27 @@ To help you get started with Upsolver, you can try it out for free. You can choo
 
 ![](https://lh4.googleusercontent.com/v_6Rqnc7nFQq3xCUF4DBwELml7m1ZhvPkZIBpIZ6kg7pLHIaO1oJchci6FFf4xX-xKAswiu6GemKqHAH5_ztLKOAmh8FZa-XSthejIQDOtXmSsP-0cEt59NMJkzxqmcUEZJNPBjo)
 
-2. Transform **data.clientEventTime** to from unix epoch to human readable format. Click on **Add Calculated Field** on the upper left and find the **TO\_DATE** function click on **SELECT**. Enter **data.clientEventTime** in the **DATETIME** box and give the field a **NAME** called **event\_time**. Click on **PREVIEW** to make sure the date looks right and click on **SAVE**.
+2. Transform **data.clientEventTime** to from unix epoch to human readable format in UTC. Click on **Add Calculated Field** on the upper left and find the **TO\_DATE** function, then click on **SELECT**. Enter **data.clientEventTime** in the **DATETIME** box and give the field a **NAME** called **event\_time**. Click on **PREVIEW** to make sure the date looks right and click on **SAVE**. 
 
-![Add Calculated Field](../../../.gitbook/assets/image%20%28151%29.png)
+![Click on Add Calculated Field](../../../.gitbook/assets/image%20%28161%29.png)
 
-![Find the TO\_DATE\(\) function and click on SELECT](../../../.gitbook/assets/image%20%28149%29.png)
+![Find the TO\_DATE\(\) function and click on SELECT](../../../.gitbook/assets/image%20%28160%29.png)
 
-![Convert data.clientEventTime to UTC time named event\_time. Click on PREVIW and SAVE.](../../../.gitbook/assets/image%20%28153%29.png)
+![Convert data.clientEventTime and to human readable format in UTC. Click on PREVIEW and SAVE. ](../../../.gitbook/assets/image%20%28159%29.png)
 
-3. Add a count for each event by clicking on **Make Aggregated &gt; OK &gt; Add Aggregation**. Click on **SELECT** next to **COUNT \(\*\)**  and click on **SAVE**.
+3. Add **event\_time** to your output by clicking on **+** next to the field. 
 
-![](../../../.gitbook/assets/zgtazoayjx.gif)
+![](../../../.gitbook/assets/czjgup6d4l.gif)
+
+4. Add a count for each event by clicking on **Make Aggregated &gt; OK &gt; Add Aggregation**. Click on **SELECT** next to **COUNT \(\*\)**  and click on **SAVE**.
+
+![Click on Make Aggregated](../../../.gitbook/assets/image%20%28162%29.png)
+
+![Click OK](../../../.gitbook/assets/image%20%28156%29.png)
+
+![Click on Add Aggregation and SELECT COUNT\(\*\)](../../../.gitbook/assets/image%20%28158%29.png)
+
+![Click on SAVE](../../../.gitbook/assets/image%20%28154%29.png)
 
 {% hint style="info" %}
 Click over to the **SQL tab** on the upper right hand corner. Keep in mind all changes that are made in the SQL view will also be represented in the UI view and vice-versa. You can see the work from the UI automatically generated a SELECT statement. Click on **PREVIEW** to ensure data looks correct.
@@ -100,16 +112,14 @@ CREATE database dev;
 * **PASSWORD: `<mysql password>`**
 * **NAME: `mysql-local`**
 
-![](https://lh3.googleusercontent.com/JSPYUXzmrHF2JYV67ZzpQr1MKwWE2EyZQ9olvpU_AMx0Dh_JM_mxlceX7gveBXGMDVWuso1bxAdAwAiJ97xDbYkixOKyiS5gPwGzVT5I-6wD0ci_Y66wZaDMEJIC1Vcv2eU1mKCA)
-
 4. Select the connection that you just defined as **MYSQL CONNECTION.** Choose **dev** under **SCHEMA** and **gaming** as **TABLE NAME.** Select **Default Storage Connection** as the **INTERMEDIATE STORAGE LOCATION** and click on **NEXT**.
 
 ![](https://lh4.googleusercontent.com/aqE5JZ6VNvoEdWFvV4kDnQItgzAXFtkXjXrztlcCF2YXVgRU8beZbrAIJ3aNR0B2BU4FVy_IcyPmRUQysC76mooR9w2ehpJlrgCJGqzo1eX8XBbumGemQbS7tk0OlQ6dh3XedX3K)
 
-5. Choose the **COMPUTE CLUSTER** and only load from the data from last 3 days click on **DEPLOY**. Click on OK if a warning appears.  
+5. Use the sliding bar to only load from the data from last day click on **DEPLOY**. Keep in mind that **ENDING AT** set as **Never** means it's a continuous data stream. Click on OK if a warning appears.  
 
 
-![](https://lh4.googleusercontent.com/5b6O0ORXDmpqXiMjqsK8uGYN1KaMq5hPb_JGG4bnLinm7L9zYkdAUxF4lVWQBxa3PEKy-zgsbBU4-iJ0ChutRn4Z7Iu1FZUTL626n8o1WeReetFPUrAuNvG_RPXqngUgug7fYqbj)
+![](../../../.gitbook/assets/image%20%28155%29.png)
 
 6. Upsolver starts outputting the data to MySQL. Wait for a moment for the data to output.
 
