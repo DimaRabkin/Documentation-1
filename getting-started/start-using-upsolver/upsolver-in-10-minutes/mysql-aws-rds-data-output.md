@@ -57,13 +57,17 @@ To help you get started with Upsolver, you can try it out for free. You can choo
 
 2. Transform data.clientEventTime to from unix epoch to human readable format. Click on **Add Calculated Field** on the upper left and find the **TO\_DATE** function click on **SELECT**. Enter **data.clientEventTime** in the **DATETIME** box and give the field a **NAME** called **event\_time**. Click on **PREVIEW** to make sure the date looks right and click on **SAVE**. 
 
-![](../../../.gitbook/assets/vqozgbvriu.gif)
+![Add Calculated Field](../../../.gitbook/assets/image%20%28151%29.png)
+
+![Find the TO\_DATE\(\) function and click on SELECT](../../../.gitbook/assets/image%20%28149%29.png)
+
+![Convert data.clientEventTime to UTC time named event\_time. Click on PREVIW and SAVE.](../../../.gitbook/assets/image%20%28153%29.png)
 
 3. Add **event\_time** to your output by clicking on **+** next to the field. 
 
 ![](../../../.gitbook/assets/czjgup6d4l.gif)
 
-3. Add a count for each event by clicking on **Make Aggregated &gt; OK &gt; Add Aggregation**. Click on **SELECT** next to **COUNT \(\*\)**  and click on **SAVE**.
+4. Add a count for each event by clicking on **Make Aggregated &gt; OK &gt; Add Aggregation**. Click on **SELECT** next to **COUNT \(\*\)**  and click on **SAVE**.
 
 ![](../../../.gitbook/assets/zgtazoayjx.gif)
 
@@ -81,6 +85,8 @@ Click over to the **SQL tab** on the upper right hand corner. Keep in mind all c
 
 {% hint style="info" %}
 If you don’t have an existing MySQL connection, you can either start up a MySQL instance following the instructions [here](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateDBInstance.html) or you can install it locally on your computer by following instructions [here](mysql-data-output-option.md).  
+
+Make sure you have the correct inbound rule configured for the MySQL \(RDS\) security group. The inbound rule allowing all IPs \(0.0.0.0/0\) to access 3306 need to be created.
 {% endhint %}
 
 3. Define MySQL Connection in the following format and click on **CREATE.**
@@ -88,26 +94,24 @@ If you don’t have an existing MySQL connection, you can either start up a MySQ
 * **CONNECTION STRING** \(make sure the schema name exists in your MySQL environment\)**:** `jdbc:mysql://database-2.dyb4e3j72yds.us-east-1.rds.amazonaws.com:3306/dev`
 * **USER NAME: `<mysql username> (AWS RDS default username is admin)`**
 * **PASSWORD: `<mysql password>`**
-* **NAME: `mysql-rds`**
+* **NAME: `<name of the connection>`**
 
-![](../../../.gitbook/assets/image%20%28130%29.png)
-
-4. Select DATA OUTPUT &gt; gaming &gt; Run and choose the connection that you just defined as **MYSQL CONNECTION.** Choose **dev** \(make sure this database exists in your MySQL environment\) under **SCHEMA** and **TABLE NAME &gt; gaming.**  Click on **NEXT**.
+4. Select **OUTPUTS &gt; gaming &gt; Run** and choose the connection that you just defined as **MYSQL CONNECTION.** Choose **dev** \(make sure this database exists in your MySQL environment\) under **SCHEMA** and **TABLE NAME &gt; gaming.**  Click on **NEXT**.
 
 ![](../../../.gitbook/assets/image%20%2857%29.png)
 
-5. Choose the **COMPUTE CLUSTER** and only load from the data from last 3 days click on **DEPLOY**. Click on OK if a warning appears.  
+5. Use the slider bar or manually input the last day of data. Keep in mind that leaving ENDING AT as Never means it's a continuous data stream. New data will be streamed as they appear. click on **DEPLOY**. Click on OK if a warning appears.  
 
 
-![](https://lh4.googleusercontent.com/5b6O0ORXDmpqXiMjqsK8uGYN1KaMq5hPb_JGG4bnLinm7L9zYkdAUxF4lVWQBxa3PEKy-zgsbBU4-iJ0ChutRn4Z7Iu1FZUTL626n8o1WeReetFPUrAuNvG_RPXqngUgug7fYqbj)
+![](../../../.gitbook/assets/image%20%28150%29.png)
 
-5. Upsolver starts outputting the data to MySQL. Wait for a moment for the data to output.
+6. Upsolver starts outputting the data to MySQL. You can keep track of the output status by clicking on PROGRESS. Wait for a moment for the data to output.
 
 ![](https://lh3.googleusercontent.com/VwPyk_YOC03OdL3EvZBYOQFEJsOS38WMBspKx45LIV3Vg4ulerw3IXVcrqkurp0OfW-9yGsqJh0_NZfLJpjG2S1-vkeogtzkC-PsPo_zqk42pqjG2Od8VZ8vgaiGBoRjHlfCCMZE)
 
 ## **Verify your data in MySQL**
 
-![](https://lh5.googleusercontent.com/0fxWkWrTxadsR-uuIkp9Tny0BVu2iLcCcNBBa_G5SN6wi6yOvf64W__KBgEHb24vjTWHBStlUU4LlwWNq_yqszCcdvc_c4ITRmULBgt209OxbuWtUjhS4wBRdZ0r0Dzo6lN1GVlW)
+![](../../../.gitbook/assets/image%20%28152%29.png)
 
 
 

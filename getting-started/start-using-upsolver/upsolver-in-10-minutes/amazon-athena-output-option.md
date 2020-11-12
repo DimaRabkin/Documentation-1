@@ -116,7 +116,7 @@ The integration should table about 1 minute. and you will see **CREATE\_COMPLETE
 
 ![](../../../.gitbook/assets/kb2sdujhxs.gif)
 
-6. Select **S3 STORAGE &gt; S3 Default Storage** and **Connection &gt; Athena** Choose the **DATABASE NAME &gt; default** that you want the table to reside. Give the table a name **TABLE NAME &gt; shopping** Click on **NEXT**.
+6. Select **S3 STORAGE &gt; S3 Default Output Storage** and **Connection &gt; Athena** Choose the **DATABASE NAME &gt; default** that you want the table to reside. Give the table a name **TABLE NAME &gt; shopping** Click on **NEXT**.
 
 ![](../../../.gitbook/assets/uwmp9unw9k.gif)
 
