@@ -59,7 +59,7 @@ To help you get started with Upsolver, you can try it out for free. You can choo
 
 1. Rename the fields by clicking on the field under **OUTPUT COLUMN NAME** and rename **payload.eventname** to **event\_name**
 
-![](../../../.gitbook/assets/image%20%28169%29.png)
+![](../../../.gitbook/assets/image%20%28171%29.png)
 
 2. Transform data.clientEventTime to from unix epoch to human readable UTC format. Click on **Add Calculated Field** on the upper left. 
 
@@ -104,7 +104,7 @@ You may change the way data is partitioned by clicking on **Manage Partitions &g
 
 1. Click on **RUN** on the upper right corner**.** Create a new connection to Amazon Athena by choosing **CONNECTION &gt; Create your first Amazon Athena Connection**.
 
-![](../../../.gitbook/assets/image%20%28170%29.png)
+![](../../../.gitbook/assets/image%20%28172%29.png)
 
 2.  Make sure you're logged in your Amazon AWS account for the following steps.
 
@@ -126,9 +126,13 @@ Upsolver has many deployment models. For this quick exercise, we're going to dep
 
 4. If you haven't logged in your AWS account, make sure you are logged in now. It will bring you to the CloudFormation stacks page for the integration. Check the **acknowledge** box and click on **Create stack**. 
 
-![](../../../.gitbook/assets/image%20%2837%29.png)
+![](../../../.gitbook/assets/image%20%28170%29.png)
 
-The integration should table about 1 minute. and you will see **CREATE\_COMPLETE**. Switch back to your Upsolver environment and click on **DONE**. 
+The integration should table about 1 minute. and you will see **CREATE\_COMPLETE**. 
+
+![](../../../.gitbook/assets/image%20%28169%29.png)
+
+5. Switch back to your Upsolver environment and click on **DONE**. 
 
 ![](../../../.gitbook/assets/image%20%28129%29.png)
 
@@ -136,7 +140,7 @@ The integration should table about 1 minute. and you will see **CREATE\_COMPLETE
 
 ![](../../../.gitbook/assets/kb2sdujhxs.gif)
 
-6. Select **S3 STORAGE &gt; S3 Default Output Storage** and **Connection &gt; Athena** Choose the **DATABASE NAME &gt; default** that you want the table to reside. Give the table a name **TABLE NAME &gt; shopping** Click on **NEXT**.
+6. Select **S3 STORAGE &gt; S3 Default Output Storage** and **Connection &gt; Athena** Choose the **DATABASE NAME &gt; default** that you want the table to reside. Give the table a name **TABLE NAME &gt; gaming** Click on **NEXT**.
 
 ![](../../../.gitbook/assets/uwmp9unw9k.gif)
 
