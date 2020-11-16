@@ -119,7 +119,7 @@ Click on **INTEGRATE** and make sure you're logged in to your AWS account. For y
 3. Choose the **Multi-Tenant Deployment** option. Leave everything as default and click on **CONTINUE**. 
 
 {% hint style="info" %}
-Upsolver has many deployment models. For this quick exercise, we're going to deploy it as a fully managed service. You can also easily deploy Upsolver in your private VPC. For more information, click [here](../../upsolver-concepts/deployment-models.md).
+Upsolver has many deployment models. For this quick exercise, we're going to deploy it as a fully managed service. You can also easily deploy Upsolver in your private VPC. For more information, click [here](../../upsolver-concepts/deployment-models.md). Make sure you have the right permission. You can click on **SEND THIS PAGE** to provide the integration information to your cloud administrators if you do not have the right permission.
 {% endhint %}
 
 ![](../../../.gitbook/assets/image%20%28132%29.png)
