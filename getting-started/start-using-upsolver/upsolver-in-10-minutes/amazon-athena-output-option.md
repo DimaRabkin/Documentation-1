@@ -53,21 +53,21 @@ To help you get started with Upsolver, you can try it out for free. You can choo
 
 4. Expand **payload** on the left hand side. Add a field to your output by clicking on the **+** sign next to the fields. The field that we’re adding is **data.payload.eventName**
 
-![](../../../.gitbook/assets/image%20%28165%29.png)
+![](../../../.gitbook/assets/image%20%28166%29.png)
 
 ## **Data transformation**
 
 1. Rename the fields by clicking on the field under **OUTPUT COLUMN NAME** and rename **payload.eventname** to **event\_name**
 
-![](../../../.gitbook/assets/image%20%28171%29.png)
+![](../../../.gitbook/assets/image%20%28175%29.png)
 
 2. Transform data.clientEventTime to from unix epoch to human readable UTC format. Click on **Add Calculated Field** on the upper left. 
 
-![Add Calculated Field to start converting unix epoch to human readable UTC format](../../../.gitbook/assets/image%20%28167%29.png)
+![Add Calculated Field to start converting unix epoch to human readable UTC format](../../../.gitbook/assets/image%20%28170%29.png)
 
 3. Find the **TO\_DATE** function then click on **SELECT**. Note that each function has usage examples displayed on the right.
 
-![](../../../.gitbook/assets/image%20%28166%29.png)
+![](../../../.gitbook/assets/image%20%28167%29.png)
 
 3. Enter **data.clientEventTime** in the **DATETIME** box and give the field a **NAME** called **event\_time**. 
 
@@ -75,7 +75,7 @@ To help you get started with Upsolver, you can try it out for free. You can choo
 
 4. Click on **PREVIEW** to make sure the date looks right and click on **SAVE**.
 
-![](../../../.gitbook/assets/image%20%28168%29.png)
+![](../../../.gitbook/assets/image%20%28171%29.png)
 
 5. We're going to do a simple aggregation by adding the count of events for a given time. Click over to the **SQL tab** on the upper right hand corner. Keep in mind all changes that are made in the SQL view will also be represented in the UI view and vice-versa. 
 
@@ -104,7 +104,7 @@ You may change the way data is partitioned by clicking on **Manage Partitions &g
 
 1. Click on **RUN** on the upper right corner**.** Create a new connection to Amazon Athena by choosing **CONNECTION &gt; Create your first Amazon Athena Connection**.
 
-![](../../../.gitbook/assets/image%20%28172%29.png)
+![](../../../.gitbook/assets/image%20%28176%29.png)
 
 2.  Make sure you're logged in your Amazon AWS account for the following steps.
 
@@ -126,11 +126,11 @@ Upsolver has many deployment models. For this quick exercise, we're going to dep
 
 4. If you haven't logged in your AWS account, make sure you are logged in now. It will bring you to the CloudFormation stacks page for the integration. Check the **acknowledge** box and click on **Create stack**. 
 
-![](../../../.gitbook/assets/image%20%28170%29.png)
+![](../../../.gitbook/assets/image%20%28174%29.png)
 
 The integration should table about 1 minute. and you will see **CREATE\_COMPLETE**. 
 
-![](../../../.gitbook/assets/image%20%28169%29.png)
+![](../../../.gitbook/assets/image%20%28172%29.png)
 
 5. Switch back to your Upsolver environment and click on **DONE**. 
 
@@ -142,16 +142,22 @@ The integration should table about 1 minute. and you will see **CREATE\_COMPLETE
 
 6. Select **S3 STORAGE &gt; S3 Default Output Storage** and **Connection &gt; Athena** Choose the **DATABASE NAME &gt; default** that you want the table to reside. Give the table a name **TABLE NAME &gt; gaming** Click on **NEXT**.
 
-![](../../../.gitbook/assets/uwmp9unw9k.gif)
+![](../../../.gitbook/assets/image%20%28169%29.png)
 
   
 7. Use the **slide bar** to select the data from the **last day**. Keep ENDING AT as Never to ensure that the data is continuously being streamed to the table. Click on **DEPLOY**.
 
-![](../../../.gitbook/assets/image%20%28119%29.png)
+![](../../../.gitbook/assets/image%20%28173%29.png)
 
-8. Upsolver starts outputting the data to Athena. Wait for the data to write to the Amazon Athena table. This might take several minutes. You can keep track of progress under the **PROGRESS** tab.
+8. Upsolver starts outputting the data to Amazon Athena. Wait for the data to write to the Amazon Athena table. This might take several minutes. You can keep track of progress under the **PROGRESS** tab. 
 
-![](../../../.gitbook/assets/image%20%2831%29.png)
+{% hint style="info" %}
+The free version offers limited processing power. If you're trying to output faster or a larger amount of data, please [contact](https://www.upsolver.com/contact) Upsolver to increase Upsolver Units.
+{% endhint %}
+
+![](../../../.gitbook/assets/image%20%28165%29.png)
 
 ## **Verify your data in Amazon Athena**
+
+![](../../../.gitbook/assets/image%20%28168%29.png)
 
