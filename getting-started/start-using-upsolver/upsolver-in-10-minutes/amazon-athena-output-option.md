@@ -69,19 +69,19 @@ To help you get started with Upsolver, you can try it out for free. You can choo
 
 ![](../../../.gitbook/assets/image%20%28167%29.png)
 
-3. Enter **data.clientEventTime** in the **DATETIME** box and give the field a **NAME** called **event\_time**. 
+4. Enter **data.clientEventTime** in the **DATETIME** box and give the field a **NAME** called **event\_time**. 
 
 ![](../../../.gitbook/assets/image%20%28164%29.png)
 
-4. Click on **PREVIEW** to make sure the date looks right and click on **SAVE**.
+5. Click on **PREVIEW** to make sure the date looks right and click on **SAVE**.
 
 ![](../../../.gitbook/assets/image%20%28171%29.png)
 
-5. We're going to do a simple aggregation by adding the count of events for a given time. Click over to the **SQL tab** on the upper right hand corner. Keep in mind all changes that are made in the SQL view will also be represented in the UI view and vice-versa. 
+6. We're going to do a simple aggregation by adding the count of events for a given time. Click over to the **SQL tab** on the upper right hand corner. Keep in mind all changes that are made in the SQL view will also be represented in the UI view and vice-versa. 
 
 ![](../../../.gitbook/assets/et8ezpo5fk.gif)
 
-6. Copy/paste **2 lines of SQL to the statement** \(see **line 8 and 10** below\) to the generated SQL statement and click on **PREVIEW** to ensure data looks correct.
+7. Copy/paste **2 lines of SQL to the statement** \(see **line 8 and 10** below\) to the generated SQL statement and click on **PREVIEW** to ensure data looks correct.
 
 ```sql
 SET partition_date = UNIX_EPOCH_TO_DATE(time);
