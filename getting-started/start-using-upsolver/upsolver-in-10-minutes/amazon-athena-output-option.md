@@ -104,7 +104,7 @@ You may change the way data is partitioned by clicking on **Manage Partitions &g
 
 1. Click on **RUN** on the upper right corner**.** Create a new connection to Amazon Athena by choosing **CONNECTION &gt; Create your first Amazon Athena Connection**.
 
-![](../../../.gitbook/assets/g17e0gbkts.gif)
+![](../../../.gitbook/assets/image%20%28170%29.png)
 
 2.  Make sure you're logged in your Amazon AWS account for the following steps.
 
@@ -119,7 +119,7 @@ Click on **INTEGRATE** and make sure you're logged in to your AWS account. For y
 3. Choose the **Multi-Tenant Deployment** option. Leave everything as default and click on **CONTINUE**. 
 
 {% hint style="info" %}
-Upsolver has many deployment models. For this quick exercise, we're going to deploy it as a fully managed service. You can also easily deploy Upsolver in your private VPC.
+Upsolver has many deployment models. For this quick exercise, we're going to deploy it as a fully managed service. You can also easily deploy Upsolver in your private VPC. For more information, click [here](../../upsolver-concepts/deployment-models.md).
 {% endhint %}
 
 ![](../../../.gitbook/assets/image%20%28132%29.png)
