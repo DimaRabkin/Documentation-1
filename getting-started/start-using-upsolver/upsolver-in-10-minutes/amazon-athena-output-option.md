@@ -9,13 +9,15 @@ description: >-
 
 To help you get started with Upsolver, you can try it out for free. You can choose between [**Upsolver Dedicated Compute**](https://app.upsolver.com/signup) ****and [**Community**](https://app.upsolver.com/signup/free) subscriptions. Both options give you free Upsolver units \(UUs\), units of processing capability per hour based on VM instance type.
 
-After logging in, choose Amazon Web Services for this guide. Upsolver runs natively on both Amazon AWS and Microsoft Azure.
+## Prerequisite
 
-![](../../../.gitbook/assets/image%20%28163%29.png)
+1. An existing AWS environment to output your data to
+2. Appropriate permissions to output to an Amazon Athena environment
+3. Have an Athena environment set up. If not, follow [these instructions](https://docs.aws.amazon.com/athena/latest/ug/getting-started.html).
 
 ## Create a data source
 
-1. Click on **DATA SOURCES &gt; NEW** to connect to various data sources. Upsolver works with both streaming and static data sources.
+1. Click on **DATA SOURCES &gt; NEW** to connect to various data sources. Upsolver works with both streaming and static data sources. We're using sample mobile gaming data for this tutorial.
 
 ![](https://lh3.googleusercontent.com/VEBtmN-b2sXlGI8KbaKyeZtTRuXAqt4NkBess6US8LAc6NxoQAvGaQLhr_2lTKRH6V3Pe2JglaQvDSlA5hcep_DedbJFNS7ayYi2Cx-uozzUkzfZW79DqsqJutaVp6-f0l799Goz)
 
@@ -51,38 +53,52 @@ After logging in, choose Amazon Web Services for this guide. Upsolver runs nativ
 
 4. Expand **payload** on the left hand side. Add a field to your output by clicking on the **+** sign next to the fields. The field that we’re adding is **data.payload.eventName**
 
-![](https://lh4.googleusercontent.com/kYfGKdqytOPUi7-qXFq-lStbLuIpgE1bv8L_Q-gOPypxSCCCNmpcK7Wk-FtVcYA9d_BQKMbAzg8_Cjb36rumK2Z-QC_m921h05G4hRnss1Qxvtc1x3H_vU8ZwMc_qnOXKqVpnvAE)
+![](../../../.gitbook/assets/image%20%28165%29.png)
 
 ## **Data transformation**
 
-1. Rename the fields by clicking on the field under **SCHEMA COLUMN** and rename **payload.eventname** to **event\_name**
+1. Rename the fields by clicking on the field under **OUTPUT COLUMN NAME** and rename **payload.eventname** to **event\_name**
 
-![](https://lh4.googleusercontent.com/v_6Rqnc7nFQq3xCUF4DBwELml7m1ZhvPkZIBpIZ6kg7pLHIaO1oJchci6FFf4xX-xKAswiu6GemKqHAH5_ztLKOAmh8FZa-XSthejIQDOtXmSsP-0cEt59NMJkzxqmcUEZJNPBjo)
+![](../../../.gitbook/assets/image%20%28169%29.png)
 
-2. Transform **data.clientEventTime** to from unix epoch to human readable format. Click on **Add Calculated Field** on the upper left and find the **TO\_DATE** function, then click on **SELECT**. Enter **data.clientEventTime** in the **DATETIME** box and give the field a **NAME** called **event\_time**. Click on **PREVIEW** to make sure the date looks right and click on **SAVE**.
+2. Transform data.clientEventTime to from unix epoch to human readable UTC format. Click on **Add Calculated Field** on the upper left. 
 
-![](https://lh4.googleusercontent.com/f25W44WwYgJoAEeRl7qbPUJWaou9nw9HdNm4yAG0EMpFP1SICxEnpnGgTb7lyKHOcSmFGIlsHjkPOA4bBDZDFFl4zsm3SCQ9aXC8pLXwCLdLdGlV5jMNb-2Xu2odxMLIh032F6wW)
+![Add Calculated Field to start converting unix epoch to human readable UTC format](../../../.gitbook/assets/image%20%28167%29.png)
 
-**3.** We're going to do a simple aggregation by adding the count of events for a given time. Click over to the **SQL tab** on the upper right hand corner. Keep in mind all changes that are made in the SQL view will also be represented in the UI view and vice-versa. **Add 3 lines of SQL to the statement** \(see line **5, 6 and 8** below\) to the automatically generated SELECT statement and click on **PREVIEW** to ensure data looks correct.
+3. Find the **TO\_DATE** function then click on **SELECT**. Note that each function has usage examples displayed on the right.
 
-![](../../../.gitbook/assets/image%20%28109%29.png)
+![](../../../.gitbook/assets/image%20%28166%29.png)
+
+3. Enter **data.clientEventTime** in the **DATETIME** box and give the field a **NAME** called **event\_time**. 
+
+![](../../../.gitbook/assets/image%20%28164%29.png)
+
+4. Click on **PREVIEW** to make sure the date looks right and click on **SAVE**.
+
+![](../../../.gitbook/assets/image%20%28168%29.png)
+
+5. We're going to do a simple aggregation by adding the count of events for a given time. Click over to the **SQL tab** on the upper right hand corner. Keep in mind all changes that are made in the SQL view will also be represented in the UI view and vice-versa. 
+
+![](../../../.gitbook/assets/et8ezpo5fk.gif)
+
+6. Copy/paste **2 lines of SQL to the statement** \(see **line 8 and 10** below\) to the generated SQL statement and click on **PREVIEW** to ensure data looks correct.
 
 ```sql
-SET event_date = UNIX_EPOCH_TO_DATE(data.clientEventTime);
-// GENERATED @ 2020-10-06T19:03:53.293444Z
-SELECT
-  data.payload.eventName AS event_name,
-  count(*) as event_count,
-  event_date as "event_date"
-FROM "upsolver-tutorials-mobile-users" 
-  group by event_date, data.payload.eventName
+SET partition_date = UNIX_EPOCH_TO_DATE(time);
+SET event_time = UNIX_EPOCH_TO_DATE(data.clientEventTime);
+// GENERATED @ 2020-11-16T01:32:29.510858Z
+SELECT PARTITION_TIME(partition_date) AS partition_date:TIMESTAMP,
+       time AS processing_time:TIMESTAMP,
+       data.payload.eventName AS event_name:STRING,
+       event_time AS event_time:TIMESTAMP,
+       count(*) as event_count:DOUBLE
+  FROM "upsolver-tutorials-mobile-users"
+  GROUP BY event_time, partition_time(partition_date), time, data.payload.eventName
 ```
 
-![](https://lh4.googleusercontent.com/5a89wcupXGYZDOWAHolTXZ9vEdMSAyj0t89VA6e6mzJjVVT6fNXPEgmzdMy7Z7Xna56GNJrGxXXi1mW0oJ-WO60yIArYI6aeM0yYnUBxFBieocFKd95Du1mBtkpA8Y8OM2rpX8NL)
-
-4. Define how to partition the table you're loading into. Click on **Manage Partitions &gt; Partition by time**. Select **Partition Field &gt; event\_date** and choose **HOURLY**. Click on **CLOSE**.
-
-![](../../../.gitbook/assets/o0cszx6e2r.gif)
+{% hint style="info" %}
+You may change the way data is partitioned by clicking on **Manage Partitions &gt; Partition by time**. Select **Partition Field &gt; event\_time** and choose the way you want to data to be partitioned. 
+{% endhint %}
 
 ## **Connect to Amazon Athena and start streaming**
 

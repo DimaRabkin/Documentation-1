@@ -11,7 +11,7 @@ You have multiple options for this tutorial. The local machine option does not r
 
 To help you get started with Upsolver, you can try it out for free. You can choose between [**Upsolver Dedicated Compute**](https://app.upsolver.com/signup) ****and [**Community**](https://app.upsolver.com/signup/free) subscriptions. Both options give you free Upsolver units \(UUs\), units of processing capability per hour based on VM instance type.
 
-After logging in, choose Amazon Web Services for this guide. Upsolver runs natively on both Amazon AWS and Microsoft Azure.
+If you've signed up for Dedicated Compute, choose Amazon Web Services and integrate with your AWS account for this guide. Upsolver runs natively on both Amazon AWS and Microsoft Azure.
 
 ![](../../../.gitbook/assets/image%20%28163%29.png)
 
