@@ -25,7 +25,7 @@ This example reads data from Google Analytics using Amazon AppFlow and utilizing
 ![](../../../.gitbook/assets/image%20%28194%29.png)
 
 {% hint style="danger" %}
-Make sure you're logged into the AWS account that you're running AppFlow from.
+Make sure you're logged into the AWS account that you're running AppFlow.
 {% endhint %}
 
 4. Define the connection integration information. Click on **LAUNCH INTEGRATION**.
