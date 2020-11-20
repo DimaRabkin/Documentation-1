@@ -79,6 +79,8 @@
     * [Full guide: S3 data source](connecting-data-sources/amazon-aws-data-sources/amazon-s3-data-source/full-guide-s3-data-source.md)
   * [Amazon Kinesis Stream data source](connecting-data-sources/amazon-aws-data-sources/amazon-kinesis-stream-data-source.md)
   * [Amazon S3 over SQS data source](connecting-data-sources/amazon-aws-data-sources/amazon-s3-over-sqs-data-source.md)
+  * [Amazon AppFlow data source](connecting-data-sources/amazon-aws-data-sources/amazon-appflow-data-source/README.md)
+    * [Setup Google Analytics client ID and client secret.](connecting-data-sources/amazon-aws-data-sources/amazon-appflow-data-source/setup-google-analytics-client-id-and-client-secret..md)
 * [Microsoft Azure data sources](connecting-data-sources/microsoft-azure-data-sources/README.md)
   * [Azure Blob storage data source](connecting-data-sources/microsoft-azure-data-sources/microsoft-azure-blob-storage-data-sou.md)
   * [Azure Event Hubs data source](connecting-data-sources/microsoft-azure-data-sources/microsoft-azure-events-hub-data-source.md)
