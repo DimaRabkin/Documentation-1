@@ -1,6 +1,8 @@
 # Amazon AppFlow data source
 
-## What is Amazon AppFlow
+To help you get started with Upsolver, you can try it out for free. Sign up for [**Upsolver Dedicated Compute**](https://app.upsolver.com/signup) ****subscription to use Amazon AppFlow. It gives you free Upsolver units \(UUs\), units of processing capability per hour based on VM instance type.
+
+You can also use Upsolver through [AWS Marketplace](https://aws.amazon.com/marketplace/pp/B07T8JDQ57?ref_=srh_res_product_title). All of the options will allow you to ingest data to Amazon S3, perform transformations with simple SQL, and output to your favorite database or analytics tools—in minutes.What is Amazon AppFlow
 
 {% hint style="info" %}
 Amazon AppFlow is a fully managed integration service that enables you to securely transfer data between Software-as-a-Service \(SaaS\) applications like Salesforce, Marketo, Slack, and ServiceNow, and AWS services like Amazon Athena, Amazon S3 and Amazon Redshift, in just a few clicks.
