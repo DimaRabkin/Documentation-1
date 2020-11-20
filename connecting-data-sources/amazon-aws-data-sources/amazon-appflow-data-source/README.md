@@ -41,7 +41,7 @@ Make sure you're logged into the AWS account that you're running AppFlow from.
 
 ![](../../../.gitbook/assets/image%20%28204%29.png)
 
-7. Navigate back to Upsolver and click on DONE. 
+7. Navigate back to Upsolver and click on **DONE**. 
 
 ![](../../../.gitbook/assets/image%20%28200%29.png)
 
