@@ -63,7 +63,7 @@ To help you get started with Upsolver, you can try it out for free. You can choo
 
 ![Find the TO\_DATE\(\) function and click on SELECT](../../../.gitbook/assets/image%20%28149%29.png)
 
-![Convert data.clientEventTime to UTC time named event\_time. Click on PREVIW and SAVE.](../../../.gitbook/assets/image%20%28153%29.png)
+![Convert data.clientEventTime to UTC time named event\_time. Click on PREVIEW and SAVE.](../../../.gitbook/assets/image%20%28153%29.png)
 
 ![Find the TO\_DATE\(\) function and click on SELECT](../../../.gitbook/assets/image%20%28160%29.png)
 
