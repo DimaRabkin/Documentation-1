@@ -61,7 +61,7 @@ To help you get started with Upsolver, you can try it out for free. You can choo
 
 ![](../../../.gitbook/assets/image%20%28175%29.png)
 
-2. Transform data.clientEventTime to from unix epoch to human readable UTC format. Click on **Add Calculated Field** on the upper left. 
+2. Transform **data.clientEventTime** to from unix epoch to human readable UTC format. Click on **Add Calculated Field** on the upper left. 
 
 ![Add Calculated Field to start converting unix epoch to human readable UTC format](../../../.gitbook/assets/image%20%28170%29.png)
 
@@ -149,7 +149,7 @@ The integration should table about 1 minute. and you will see **CREATE\_COMPLETE
 
 ![](../../../.gitbook/assets/image%20%28173%29.png)
 
-8. Upsolver starts outputting the data to Amazon Athena. Wait for the data to write to the Amazon Athena table. This might take several minutes. You can keep track of progress under the **PROGRESS** tab. 
+8. Upsolver starts outputting the data to Amazon Athena. Wait for the data to write to the Amazon Athena table. This might take several minutes. You can keep track of progress under the **PROGRESS** tab. You should be able to start querying your data in a few minutes.
 
 {% hint style="info" %}
 The free version offers limited processing power. If you're trying to output faster or a larger amount of data, please [contact](https://www.upsolver.com/contact) Upsolver to increase Upsolver Units.
