@@ -122,5 +122,3 @@ Make sure you have the correct inbound rule configured for the MySQL \(RDS\) sec
 
 ![](../../../.gitbook/assets/image%20%28152%29.png)
 
-![](../../../.gitbook/assets/image%20%28157%29.png)
-
