@@ -69,7 +69,7 @@ To help you get started with Upsolver, you can try it out for free. You can choo
 
 4. Add a count for each event by clicking on **Make Aggregated &gt; OK &gt; Add Aggregation**. Click on **SELECT** next to **COUNT \(\*\)**  and click on **SAVE**.
 
-![Click on Make Aggregated](../../../.gitbook/assets/image%20%28162%29.png)
+![Click on Make Aggregated](../../../.gitbook/assets/image%20%28210%29.png)
 
 ![Click OK](../../../.gitbook/assets/image%20%28156%29.png)
 
@@ -96,8 +96,8 @@ If you don’t have an existing MySQL connection, you can install it locally on 
 * Run the following commands in your MySQL environment.
 
 ```bash
+set global local_infile = on;
 CREATE database dev;
-set local-infile = 1;
 ```
 
 * After MySQL is running locally, use [ngrok](https://dashboard.ngrok.com/get-started/setup) to  start a TCP tunnel forwarding to your local port 3306 by running `./ngrok tcp 3306` You will have the forwarding information below:
@@ -111,16 +111,15 @@ set local-infile = 1;
 * **PASSWORD: `<mysql password>`**
 * **NAME: `mysql-local`**
 
-4. Select the connection that you just defined as **MYSQL CONNECTION.** Choose **dev** under **SCHEMA** and **gaming** as **TABLE NAME.** Select **Default Storage Connection** as the **INTERMEDIATE STORAGE LOCATION** and click on **NEXT**.
+4. Select **OUTPUTS &gt; gaming &gt; Run** and choose the connection that you just defined as **MYSQL CONNECTION.** Choose **dev** \(make sure this database exists in your MySQL environment\) under **SCHEMA** and **TABLE NAME &gt; gaming.** Click on **NEXT**.
 
-![](https://lh4.googleusercontent.com/aqE5JZ6VNvoEdWFvV4kDnQItgzAXFtkXjXrztlcCF2YXVgRU8beZbrAIJ3aNR0B2BU4FVy_IcyPmRUQysC76mooR9w2ehpJlrgCJGqzo1eX8XBbumGemQbS7tk0OlQ6dh3XedX3K)
+![](../../../.gitbook/assets/image%20%28208%29.png)
 
 5. Use the sliding bar to only load from the data from last day click on **DEPLOY**. Keep in mind that **ENDING AT** set as **Never** means it's a continuous data stream. Click on OK if a warning appears.  
 
+![](../../../.gitbook/assets/image%20%28207%29.png)
 
-![](../../../.gitbook/assets/image%20%28155%29.png)
-
-6. Upsolver starts outputting the data to MySQL. Wait for a moment for the data to output.
+6. Upsolver starts outputting the data to MySQL. You can keep track of the output status by clicking on PROGRESS. Wait for a moment for the data to output.
 
 ![](https://lh3.googleusercontent.com/VwPyk_YOC03OdL3EvZBYOQFEJsOS38WMBspKx45LIV3Vg4ulerw3IXVcrqkurp0OfW-9yGsqJh0_NZfLJpjG2S1-vkeogtzkC-PsPo_zqk42pqjG2Od8VZ8vgaiGBoRjHlfCCMZE)
 

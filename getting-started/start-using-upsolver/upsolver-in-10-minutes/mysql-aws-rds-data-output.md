@@ -73,7 +73,7 @@ To help you get started with Upsolver, you can try it out for free. You can choo
 
 4. Add a count for each event by clicking on **Make Aggregated &gt; OK &gt; Add Aggregation**. Click on **SELECT** next to **COUNT \(\*\)** and click on **SAVE**.
 
-![Click on Make Aggregated](../../../.gitbook/assets/image%20%28208%29.png)
+![Click on Make Aggregated](../../../.gitbook/assets/image%20%28209%29.png)
 
 ![Click OK](../../../.gitbook/assets/image%20%28156%29.png)
 
