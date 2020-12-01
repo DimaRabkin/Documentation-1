@@ -27,7 +27,7 @@ To help you get started with Upsolver, you can try it out for free. You can choo
 
 ![](https://lh4.googleusercontent.com/VSsLMilef5nd-Vgy7IyjZlPk4wzq_IBmo6kLKnIcVZqgrCkmVnYUKeJuzkV5hb1ZIWX5BzjPeq4OC0BV1Cfx8oXcM3HeVf0N3B8ow229INdD-aGIkei3KPrfMn_DFhxDgQ2P-MUh)
 
-1. Click on **CREATE** to complete the Amazon S3 Data Source. Notice the schema is automatically generated and data statistics are also displayed.
+5. Click on **CREATE** to complete the Amazon S3 Data Source. Notice the schema is automatically generated and data statistics are also displayed.
 
 ![](https://lh4.googleusercontent.com/1TzV0loU_yMvnGi1-Yxk28yrhiR1ITl0IxeZTHMKROZQsOdVctaTtmNaWTe4wS1CAp4DWIyhUGYQVF8GkTV5qKsQFIphxoemWPxNzimagThCnDD9P9FmKZewIAzZkEknvTdeM_lf)
 
@@ -73,7 +73,7 @@ To help you get started with Upsolver, you can try it out for free. You can choo
 
 4. Add a count for each event by clicking on **Make Aggregated &gt; OK &gt; Add Aggregation**. Click on **SELECT** next to **COUNT \(\*\)** and click on **SAVE**.
 
-![Click on Make Aggregated](../../../.gitbook/assets/image%20%28207%29.png)
+![Click on Make Aggregated](../../../.gitbook/assets/image%20%28208%29.png)
 
 ![Click OK](../../../.gitbook/assets/image%20%28156%29.png)
 
@@ -112,7 +112,7 @@ Make sure you have the correct inbound rule configured for the MySQL \(RDS\) sec
 
 5. Use the sliding bar to only load from the data from last day click on **DEPLOY**. Keep in mind that **ENDING AT** set as **Never** means it's a continuous data stream. Click on OK if a warning appears.  
 
-![](../../../.gitbook/assets/image%20%28155%29.png)
+![](../../../.gitbook/assets/image%20%28207%29.png)
 
 6. Upsolver starts outputting the data to MySQL. You can keep track of the output status by clicking on PROGRESS. Wait for a moment for the data to output.
 
