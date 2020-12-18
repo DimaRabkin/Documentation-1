@@ -11,7 +11,7 @@ Upsolver supports ingesting data from various data source types. These data sour
 * File based data sources
   * [Amazon S3](../../connecting-data-sources/amazon-aws-data-sources/amazon-s3-data-source/)
   * [Amazon S3 over SQS](../../connecting-data-sources/amazon-aws-data-sources/amazon-s3-over-sqs-data-source.md)
-  * Amazon AppFlow \(coming soon\)
+  * [Amazon AppFlow](../../connecting-data-sources/amazon-aws-data-sources/amazon-appflow-data-source/)
   * [Microsoft Azure Blob Storage](../../connecting-data-sources/microsoft-azure-data-sources/microsoft-azure-blob-storage-data-sou.md)
   * [Google Cloud Storage](../../connecting-data-sources/google-cloud-storage-data-source.md)
   * [File upload](../../connecting-data-sources/additional-data-sources.md)
