@@ -4,7 +4,7 @@ description: Welcome to Upsolver Open Lake
 
 # Open Lake concepts
 
-Upsolver provides a SQL engine to allow users easily query processed data. Open Lake has an hierarchical structure that allow users to group and work with data ingested from Upsolver.
+Upsolver provides a SQL engine to allow users easily query processed data. Open Lake has an hierarchical structure that allow users to group and work with data outputted from Upsolver.
 
  A `CREATE TABLE` statement will define the Catalog, Schema and Table that the user is creating. For example: in the `CREATE TABLE upsolver.shopping.orders ()` statement`upsolver` is the Catalog, `shopping` is the Schema and `orders` is the Table.
 
