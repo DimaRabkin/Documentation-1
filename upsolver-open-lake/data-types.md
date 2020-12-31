@@ -16,7 +16,7 @@ Open Lake has a set of built-in data types, described below.
 
 #### `INTEGER`
 
-> A 32-bit signed two’s complement integer with a minimum value of `-2^31` and a maximum value of `2^31 - 1`. The name `INT` is also available for this type.
+> A `INTEGER` will upcast to `BIGINT` in Upsolver Open Lake. The name `INT` is also available for this type.
 
 #### `BIGINT`
 
