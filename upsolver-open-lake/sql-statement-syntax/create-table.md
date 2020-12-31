@@ -18,7 +18,7 @@ table_name (
                       [  primary_keys = Array[, ...],
                          partitioned_by = Array[, ...],
                          compute_cluster = 'default',
-                         retention={ minute | hour | day },
+                         retention={ minutes | hours | days },
                          storage_location = 's3://...')
                        ] 
          ) 
@@ -77,7 +77,7 @@ The name or ID of the compute cluster hosting the defined table.
 
 #### retention
 
-Time window to keep data in the table. It can be by minutes, hours or days. Data outside of the retention period will be deleted.
+Time defined to keep data in the table. It can be by minutes, hours or days. Data outside of the retention period will be deleted. The time is calculated from the time an event is written to the Open Lake environment.
 
 #### storage\_location
 
