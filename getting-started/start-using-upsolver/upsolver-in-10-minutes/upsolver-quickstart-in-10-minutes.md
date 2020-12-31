@@ -92,5 +92,7 @@ Now you might wonder - I have a data source, how do I transform my data and writ
 
 ## Play on your own!
 
-C
+Congratulations! You have taken a quick tour of Upsolver. Upsolver offers so much more than this Quickstart. You're welcome to duplicate the OUTPUT and make your own transformations before writing to Upsolver's Lake House. Happy Upsolving!
+
+![](../../../.gitbook/assets/tuvj6mvivm.gif)
 
