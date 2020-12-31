@@ -71,6 +71,15 @@
   * [Data doesn't appear in Athena table](getting-started/troubleshooting/data-doesnt-appear-in-athena-table.md)
   * [I get an exception when querying my Athena table](getting-started/troubleshooting/i-get-an-exception-when-querying-my-athena-table.md)
 
+## Upsolver Open Lake
+
+* [Open Lake concepts](upsolver-open-lake/open-lake-concepts.md)
+* [SQL statement syntax](upsolver-open-lake/sql-statement-syntax/README.md)
+  * [CREATE TABLE](upsolver-open-lake/sql-statement-syntax/create-table.md)
+  * [DROP TABLE](upsolver-open-lake/sql-statement-syntax/drop-table.md)
+  * [SELECT](upsolver-open-lake/sql-statement-syntax/select.md)
+* [Data types](upsolver-open-lake/data-types.md)
+
 ## Connecting data sources
 
 * [Amazon AWS data sources](connecting-data-sources/amazon-aws-data-sources/README.md)
