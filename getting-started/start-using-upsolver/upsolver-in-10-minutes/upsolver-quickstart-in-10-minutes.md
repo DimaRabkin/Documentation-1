@@ -76,3 +76,21 @@ Click on **RUN** on the upper right hand corner to see results from these querie
 
 ![](../../../.gitbook/assets/image%20%28214%29.png)
 
+## Sample data source
+
+We have pre-created sample data sources used by the queries in the worksheets. You may explore the data sources by clicking on **DATA SOURCES &gt;  Upsolver Tutorial Order Bucket**
+
+![](../../../.gitbook/assets/zqokde92k8.gif)
+
+Upsolver parses data on read. It provides you with rich data demographics and statistics on each field. Upsolver supports all data formats and keeps an open format. Click [here](https://docs.upsolver.com/upsolver-1/connecting-data-sources/data-source-ui-tour) for information on the Data Source user interface. 
+
+## Sample data output
+
+Now you might wonder - I have a data source, how do I transform my data and write to a table? We can take a look at the pre-built data output by clicking on **OUPUTS &gt; Orders &gt; DEFINITION**. Upsolver provides over 200 built-in transformation functions to allow you easily transform your raw data. For more information, please click [here](../../../data-outputs-and-data-transformation/data-outputs/).
+
+![](../../../.gitbook/assets/ueszdjslnc.gif)
+
+## Play on your own!
+
+C
+
