@@ -77,7 +77,7 @@ The name or ID of the compute cluster hosting the defined table.
 
 #### retention
 
-Time defined to keep data in the table. It can be by minutes, hours or days. Data outside of the retention period will be deleted. The time is calculated from the time an event is written to the Open Lake environment.
+Time defined to keep data in the table. It can be by minutes, hours or days. Data outside of the retention period will be deleted. Retention start time is based on the partition date the user sets. Therefore it isn't supported if a date partition field is not defined.
 
 #### storage\_location
 
