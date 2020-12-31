@@ -8,7 +8,7 @@ description: This guide provides a quick tour of Upsolver for first time users.
 
 When you first log into Upsolver's [free Community Edition](https://app.upsolver.com/signup/free), you will see a link to this guide. It provides you with a quick tour of Upsolver. 
 
-![](../../../.gitbook/assets/image%20%28214%29.png)
+![](../../../.gitbook/assets/image%20%28215%29.png)
 
 The sample environment provides you with a pre-created[ ](../../../connecting-data-sources/amazon-aws-data-sources/amazon-s3-data-source/quick-guide-s3-data-source-1.md)[Data Source ](../../../connecting-data-sources/amazon-aws-data-sources/amazon-s3-data-source/quick-guide-s3-data-source-1.md)that continuously parses data from an Amazon S3 bucket. 
 
@@ -72,5 +72,7 @@ GROUP BY  1,2,3,4,5,6 limit 10
 {% endtab %}
 {% endtabs %}
 
+Click on **RUN** on the upper right hand corner to see results from these queries. 
 
+![](../../../.gitbook/assets/image%20%28214%29.png)
 
