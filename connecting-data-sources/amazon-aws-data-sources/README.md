@@ -6,6 +6,13 @@ description: >-
 
 # Amazon AWS data sources
 
+## AWS data sources guides
+
+*  [S3](amazon-s3-data-source/quick-guide-s3-data-source-1.md)
+*  [Kinesis](amazon-kinesis-stream-data-source.md)
+* [ S3 over SQS](amazon-s3-over-sqs-data-source.md)
+*  [AppFlow](amazon-appflow-data-source/)
+
 ## [Amazon S3](amazon-s3-data-source/)
 
 ### What is Amazon S3?
