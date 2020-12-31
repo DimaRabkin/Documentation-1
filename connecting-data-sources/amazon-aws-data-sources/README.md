@@ -47,5 +47,11 @@ Amazon SQS offers common constructs such as [dead-letter queues](https://docs.aw
 
 Amazon SQS supports both [standard](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues.html) and [FIFO queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues.html).
 
+## [Amazon AppFlow](amazon-appflow-data-source/)
+
+### What is Amazon AppFlow?
+
+Amazon AppFlow is a fully managed integration service that enables you to securely transfer data between Software-as-a-Service \(SaaS\) applications like [Salesforce](https://aws.amazon.com/blogs/apn/building-secure-and-private-data-flows-between-aws-and-salesforce-using-amazon-appflow/), Marketo, [Slack](https://www.youtube.com/watch?v=XQO98akt2jI), and ServiceNow, and AWS services like Amazon S3 and Amazon Redshift. With AppFlow, you can run data flows at nearly any scale at the frequency you choose - on a schedule, in response to a business event, or on demand. 
+
 {% page-ref page="amazon-s3-over-sqs-data-source.md" %}
 
