@@ -59,15 +59,12 @@ GROUP BY  1,2,3,4,5,6 limit 10
 -- by clicking on DATA SOURCES > NEW 
 -- Happy Upsolving! 
 
-SELECT order_date,
-         order_id,
-         buyer_email,
-         net_total,
-         sales_tax,
-         net_total + sales_tax as order_total
+SELECT count(distinct order_id) as order_per_day,
+         order_date
 FROM upsolver.exampledatabase.orders
 WHERE  event_type = 'ORDER'
-GROUP BY  1,2,3,4,5,6 limit 10
+GROUP BY  order_date
+ORDER BY order_date DESC;
 ```
 {% endtab %}
 {% endtabs %}
