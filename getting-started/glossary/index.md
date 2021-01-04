@@ -829,7 +829,8 @@ description: >-
             the ingestion time - when the event is stored in the source</li>
           <li>File based data sources (S3, Azure Blob, etc...) <em><b>time</b></em> is
             the timestamp when Upsolver discovers the new file(s)</li>
-          <li>JDBC data sources time is when Upsolver discovers a new or updated row</li>
+          <li>JDBC data sources <em><b>time</b></em> is when Upsolver discovers a new
+            or updated row</li>
         </ul>
       </td>
     </tr>
