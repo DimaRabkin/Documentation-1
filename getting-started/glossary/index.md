@@ -155,6 +155,7 @@ description: >-
 | Tabular | output property | Whether or not the output is tabular. |
 | Tags | cluster property | Assign custom metadata to your cluster using tags consisting of a key and a value, both of which you define. This is a convenient way to categorize your AWS resources in different ways \(e.g. by purpose, owner, or environment\). For example, you could define a set of tags for your account's clusters that helps you track each cluster's owner or identify a production cluster versus a testing cluster. It is recommended that you create a consistent set of tags to meet your organization requirements. |
 | Target Storage | data source property | Where to store the data read \(the output storage\). |
+| Time | output property | Processing time of the event. It is the point in time where the event processed \(consumed\) by Upsolver. Note: this is not the event time. |
 | Topic Name | output property | Name of topic this output is written to. |
 | Total Values | data source | The total number of values ingested for this field. |
 | Unresolved Errors | data source | Number of unresolved errors stemming from outputs created from this data source. |
