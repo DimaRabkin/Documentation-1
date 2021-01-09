@@ -187,3 +187,5 @@ Click on **PREVIEW** to make sure the data is as expected.
 
 #### Congratulations! You have taken a quick tour of Upsolver.[ Contact us ](https://www.upsolver.com/schedule-demo)to start your Upsolver journey. Happy Upsolving!
 
+![](../../../.gitbook/assets/gldkrdxeyq.gif)
+
