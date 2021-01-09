@@ -97,7 +97,7 @@ Highlight **Events Over Time** to understand your events demographics.
 
 ![](../../../.gitbook/assets/sqqka7zt0h.gif)
 
-Click [here](../../../connecting-data-sources/data-source-ui-tour.md) to understand Upsolver's Data Sources UI features better.
+Click [here](../../../connecting-data-sources/data-source-ui-tour.md) to learn more about Upsolver's Data Sources UI.
 
 ### Sample data output
 
@@ -107,7 +107,7 @@ Now you might wonder - I have a data source, how do I transform my data and writ
 
 ## Process data with Open Lake data output 
 
-To understand Upsolver better, let's create a Data Output together. Upsolver offers so much more than this Quickstart. [Contact Upsolver ](https://www.upsolver.com/schedule-demo)for a demo or a free POC with more compute.
+To learn more about Upsolver, let's create a Data Output together. Upsolver offers much more than this Quickstart. [Contact Upsolver ](https://www.upsolver.com/schedule-demo)for a demo or a free POC with more compute power.
 
 ### Create a Open Lake data output
 
