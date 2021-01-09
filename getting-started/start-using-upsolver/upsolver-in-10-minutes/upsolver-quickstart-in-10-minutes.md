@@ -134,7 +134,7 @@ data.salesTax
 
 ### Perform simple data transformations
 
-1. You may use the UI or SQL to transform data. Changes will be automatically synced between the two interface. Let's start by transform orderDate to a TIMESTAMP format. Click on **Add Calculated Field**. Locate **TO\_DATE** function and click on **SELECT**. Under **DATETIME**, locate the **data.orderDate** field and give it a **NAME** as **order\_date**. click on **SAVE**. Notice that the calculated field is automatically added to your listed output fields as order\_date with TEMSTAMP data type.
+1. You may use the UI or SQL to transform data. Changes will be automatically synced between the two interface. Let's start by transform orderDate to a TIMESTAMP format. Click on **Add Calculated Field**. Locate **TO\_DATE** function and click on **SELECT**. Under **DATETIME**, locate the **data.orderDate** field and give it a **NAME** as **order\_date**. click on **SAVE**. Notice that the calculated field is automatically added to your listed output fields as order\_date with TIMESTAMP data type.
 
 ![](../../../.gitbook/assets/2i140c8wyt.gif)
 
