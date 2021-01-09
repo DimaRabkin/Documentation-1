@@ -8,13 +8,17 @@ description: This guide provides a quick tour of Upsolver for first time users.
 
 When you first log into Upsolver's [free Community Edition](https://app.upsolver.com/signup/free), you will see a link to this guide. It provides you with a quick tour of Upsolver. 
 
-![](../../../.gitbook/assets/image%20%28215%29.png)
+![](../../../.gitbook/assets/image%20%28221%29.png)
 
 The sample environment provides you with a pre-created[ ](../../../connecting-data-sources/amazon-aws-data-sources/amazon-s3-data-source/quick-guide-s3-data-source-1.md)[Data Source ](../../../connecting-data-sources/amazon-aws-data-sources/amazon-s3-data-source/quick-guide-s3-data-source-1.md)that continuously parses data from an Amazon S3 bucket. 
 
 The sample Open Lake data output transforms the data and users can query the transformed data with SQL. 
 
-## Run sample queries
+{% hint style="info" %}
+The [free Community Edition](https://app.upsolver.com/signup/free) offers limited compute. [Contact Upsolver f](https://www.upsolver.com/schedule-demo)or more compute resources. 
+{% endhint %}
+
+### Run sample queries
 
 Upsolver provides you with a pre-populated worksheet that runs queries using Open Lake query engine. Click on **Explore the Quickstart Worksheet** to get started!
 
@@ -41,7 +45,7 @@ SELECT order_date,
          net_total,
          sales_tax,
          net_total + sales_tax as order_total
-FROM upsolver.exampledatabase.orders
+FROM upsolver.sample_data.orders
 WHERE  event_type = 'ORDER'
 GROUP BY  1,2,3,4,5,6 limit 10
 ```
@@ -61,7 +65,7 @@ GROUP BY  1,2,3,4,5,6 limit 10
 
 SELECT count(distinct order_id) as order_per_day,
          order_date
-FROM upsolver.exampledatabase.orders
+FROM upsolver.sample_data.orders
 WHERE  event_type = 'ORDER'
 GROUP BY  order_date
 ORDER BY order_date DESC;
@@ -71,25 +75,115 @@ ORDER BY order_date DESC;
 
 Click on **RUN** on the upper right hand corner to see results from these queries. 
 
-![](../../../.gitbook/assets/image%20%28214%29.png)
+![](../../../.gitbook/assets/image%20%28220%29.png)
 
-## Sample data source
+### Explore sample data source
 
 We have pre-created sample data sources used by the queries in the worksheets. You may explore the data sources by clicking on **DATA SOURCES &gt;  Upsolver Tutorial Order Bucket**
 
 ![](../../../.gitbook/assets/zqokde92k8.gif)
 
-Upsolver parses data on read. It provides you with rich data demographics and statistics on each field. Upsolver supports all data formats and keeps an open format. Click [here](https://docs.upsolver.com/upsolver-1/connecting-data-sources/data-source-ui-tour) for information on the Data Source user interface. 
+Upsolver parses data on read. It provides you with rich data demographics and statistics on each field. Upsolver supports all data formats and keeps an open format. 
 
-## Sample data output
+A sample of the raw data from source can be viewed by clicking the **SAMPLES** tab.
 
-Now you might wonder - I have a data source, how do I transform my data and write to a table? We can take a look at the pre-built data output by clicking on **OUPUTS &gt; Orders &gt; DEFINITION**. Upsolver provides over 200 built-in transformation functions to allow you easily transform your raw data. For more information, please click [here](../../../data-outputs-and-data-transformation/data-outputs/).
+![](../../../.gitbook/assets/image%20%28213%29.png)
+
+Click on each field on the left \(automatically parsed and inferred by Upsolver\) to understand the statistics of your data.
+
+![](../../../.gitbook/assets/image%20%28212%29.png)
+
+Highlight **Events Over Time** to understand your events demographics.
+
+![](../../../.gitbook/assets/sqqka7zt0h.gif)
+
+Click [here](../../../connecting-data-sources/data-source-ui-tour.md) to understand Upsolver's Data Sources UI features better.
+
+### Sample data output
+
+Now you might wonder - I have a data source, how do I transform my data and write to a table? We can take a look at the pre-built data output by clicking on **OUPUTS &gt; Orders &gt; DEFINITION**. Upsolver provides over _**200 built-in transformation functions**_ to allow you easily transform your raw data. You can explore these functions on your own by creating your own Open Lake data output. \(see next section\) For more information, please click [here](../../../data-outputs-and-data-transformation/data-outputs/).
 
 ![](../../../.gitbook/assets/ueszdjslnc.gif)
 
-## Play on your own!
+## Process data with Open Lake data output 
 
-Congratulations! You have taken a quick tour of Upsolver. Upsolver offers so much more than this Quickstart. You're welcome to duplicate the OUTPUT and make your own transformations before writing to Upsolver's Lake House. Happy Upsolving!
+To understand Upsolver better, let's create a Data Output together. Upsolver offers so much more than this Quickstart. [Contact Upsolver ](https://www.upsolver.com/schedule-demo)for a demo or a free POC with more compute.
 
-![](../../../.gitbook/assets/tuvj6mvivm.gif)
+### Create a Open Lake data output
+
+1. Click on **DATAOUTPUTS &gt; NEW** and **SELECT** Open Lake.
+
+![](../../../.gitbook/assets/screen-shot-2021-01-05-at-11.54.45-am.png)
+
+2. Give your output a NAME and select **Upsolver Tutorial Orders Bucket** as your **DATA SOURCES**. Leave the output option as **New** to create a new table in Open Lake. Click on **NEXT**.
+
+![](../../../.gitbook/assets/image%20%28218%29.png)
+
+### Add fields to your Open Lake output
+
+Add the following fields to your output by clicking on the **+** sign next to each field. These fields were parsed automatically when the Data Source was created. Leave **data.netTotal** and **data.salesTax** as **DOUBLE** when you map these fields to the output.
+
+```text
+data.buyerEmail
+data.orderId
+data.netTotal
+data.salesTax
+```
+
+![Add parsed fields to output](../../../.gitbook/assets/21wckuncvb.gif)
+
+### Perform simple data transformations
+
+1. You may use the UI or SQL to transform data. Changes will be automatically synced between the two interface. Let's start by transform orderDate to a TIMESTAMP format. Click on **Add Calculated Field**. Locate **TO\_DATE** function and click on **SELECT**. Under **DATETIME**, locate the **data.orderDate** field and give it a **NAME** as **order\_date**. click on **SAVE**. Notice that the calculated field is automatically added to your listed output fields as order\_date with TEMSTAMP data type.
+
+![](../../../.gitbook/assets/2i140c8wyt.gif)
+
+2. Let's use the SQL UI to add a simple calculation. Click over to the SQL tab. Notice that changes the UI is automatically translated in the SQL statement.
+
+![SQL View](../../../.gitbook/assets/mfgx7vr2ri.gif)
+
+3. Add the following SQL to your pre-generated SQL statement \(note that this aggregation can also be easily performed in the UI instead of SQL\) `data.netTotal + data.salesTax as order_total`on line 11 and `WHERE data.eventType = 'ORDER'` on line 13. The SQL will look like the following after adding these aggregations.
+
+```sql
+SET partition_date = UNIX_EPOCH_TO_DATE(time);
+SET order_date = TO_DATE(data.orderDate);
+// GENERATED @ 2021-01-09T17:30:37.276673Z
+SELECT PARTITION_TIME(partition_date) AS partition_date:TIMESTAMP,
+       time AS processing_time:TIMESTAMP,
+       data.buyerEmail AS buyeremail:STRING,
+       data.orderId AS orderid:STRING,
+       data.netTotal AS nettotal:DOUBLE,
+       data.salesTax AS salestax:DOUBLE,
+       order_date AS order_date:TIMESTAMP, 
+       data.netTotal + data.salesTax as order_total //add this line
+  FROM "Upsolver Tutorial Orders Bucket"  
+      WHERE data.eventType = 'ORDER' //add this line
+    
+```
+
+Click on **PREVIEW** to make sure the data is as expected.
+
+![](../../../.gitbook/assets/image%20%28217%29.png)
+
+4. Click back to your **UI** view and notice that everything you've changed in SQL is automatically reflected in the UI. Note: we're only scratching the surface of Upsolver data processing capabilities. Upsolver have hundreds of built-in functions to make data transformation simple.
+
+![](../../../.gitbook/assets/959yo38p5y.gif)
+
+### Output processed data to Open Lake
+
+1. Click on **RUN** on the upper right corner. Leave everything as its default values and provide a **TABLE NAME**. Click on **NEXT**.
+
+![](../../../.gitbook/assets/v26cpup8et.gif)
+
+2. On the Use the slide bar to choose the time window you want to output your data from. Let's choose the data from the past 12 hours for this example. Optionally, you can leave **ENDING AT** as **Never** to continuously stream new data into your Open Lake table. 
+
+![](../../../.gitbook/assets/j1sscks8zv.gif)
+
+3. Click on **DEPLOY**. Click on the **PROGRESS** tab to monitor the Data Output status.
+
+![](../../../.gitbook/assets/ih3otv15gb.gif)
+
+4. The output will take about 2 minutes to catchup to its current event. After the data is caught up under **PROGRESS**, click on **ERRORS** to make sure everything is successful. Click the **OPEN LAKE** icon on the left menu bar and run a sample query to make sure everything was written properly. e.g. `SELECT * FROM upsolver.sample_data.<your table name> LIMIT 100;`
+
+#### Congratulations! You have taken a quick tour of Upsolver.[ Contact us ](https://www.upsolver.com/schedule-demo)to start your Upsolver journey. Happy Upsolving!
 
