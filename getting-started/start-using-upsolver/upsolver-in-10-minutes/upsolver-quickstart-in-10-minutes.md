@@ -12,7 +12,7 @@ When you first log into Upsolver's [free Community Edition](https://app.upsolver
 
 ## About this guide
 
-This guide is divided into two major sections. You may take a tour of both sections or directly create an Open Lake Data Output.
+This guide is divided into two major sections. You may take a tour of both sections or directly create an Open Lake Data Output and start transforming data.
 
 1. [View only guide](https://docs.upsolver.com/upsolver-1/getting-started/start-using-upsolver/upsolver-in-10-minutes/upsolver-quickstart-in-10-minutes#explore-pre-defined-queries-data-source-and-data-output-view-only)
 2. [Try it yourself guide](https://docs.upsolver.com/upsolver-1/getting-started/start-using-upsolver/upsolver-in-10-minutes/upsolver-quickstart-in-10-minutes#process-data-with-open-lake-data-output-try-it-yourself)
