@@ -111,7 +111,7 @@ To learn more about Upsolver, let's create a Data Output together. Upsolver offe
 
 ### Create a Open Lake data output
 
-1. Click on **DATAOUTPUTS &gt; NEW** and **SELECT** Open Lake.
+1. Click on **DATA OUTPUTS &gt; NEW** and **SELECT** Open Lake.
 
 ![](../../../.gitbook/assets/screen-shot-2021-01-05-at-11.54.45-am.png)
 
@@ -134,11 +134,11 @@ data.salesTax
 
 ### Perform simple data transformations
 
-1. You may use the UI or SQL to transform data. Changes will be automatically synced between the two interface. Let's start by transform orderDate to a TIMESTAMP format. Click on **Add Calculated Field**. Locate **TO\_DATE** function and click on **SELECT**. Under **DATETIME**, locate the **data.orderDate** field and give it a **NAME** as **order\_date**. click on **SAVE**. Notice that the calculated field is automatically added to your listed output fields as order\_date with TIMESTAMP data type.
+1. You may use the UI or SQL to transform data. Changes will be automatically synced between the two interfaces. Let's start by transform orderDate to a TIMESTAMP format. Click on **Add Calculated Field**. Locate **TO\_DATE** function and click on **SELECT**. Under **DATETIME**, locate the **data.orderDate** field and give it a **NAME** as **order\_date**. click on **SAVE**. Notice that the calculated field is automatically added to your listed output fields as **data**.**order\_date** with TIMESTAMP data type.
 
 ![](../../../.gitbook/assets/2i140c8wyt.gif)
 
-2. Let's use the SQL UI to add a simple calculation. Click over to the SQL tab. Notice that changes the UI is automatically translated in the SQL statement.
+2. Let's use the SQL UI to add a simple calculation. Click over to the SQL tab. Notice that changes the UI are automatically translated in the SQL statement.
 
 ![SQL View](../../../.gitbook/assets/mfgx7vr2ri.gif)
 
@@ -165,7 +165,7 @@ Click on **PREVIEW** to make sure the data is as expected.
 
 ![](../../../.gitbook/assets/image%20%28217%29.png)
 
-4. Click back to your **UI** view and notice that everything you've changed in SQL is automatically reflected in the UI. Note: we're only scratching the surface of Upsolver data processing capabilities. Upsolver have hundreds of built-in functions to make data transformation simple.
+4. Click back to your **UI** view and notice that everything you've changed in SQL is automatically reflected in the UI. Note: we're only scratching the surface of Upsolver data processing capabilities. Upsolver has hundreds of built-in functions to make data transformation simple.
 
 ![](../../../.gitbook/assets/959yo38p5y.gif)
 
@@ -175,7 +175,7 @@ Click on **PREVIEW** to make sure the data is as expected.
 
 ![](../../../.gitbook/assets/v26cpup8et.gif)
 
-2. On the Use the slide bar to choose the time window you want to output your data from. Let's choose the data from the past 12 hours for this example. Optionally, you can leave **ENDING AT** as **Never** to continuously stream new data into your Open Lake table. 
+2. Use the slide bar to choose the time window you want to output your data from. Let's choose the data from the past 12 hours for this example. Optionally, you can leave **ENDING AT** as **Never** to continuously stream new data into your Open Lake table. 
 
 ![](../../../.gitbook/assets/j1sscks8zv.gif)
 
