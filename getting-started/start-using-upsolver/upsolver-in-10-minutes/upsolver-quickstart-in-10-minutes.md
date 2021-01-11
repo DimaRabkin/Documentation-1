@@ -12,7 +12,7 @@ When you first log into Upsolver's [free Community Edition](https://app.upsolver
 
 ## About this guide
 
-This guide is divided into two major sections. You may take a tour of both sections or directly create an Open Lake data output.
+This guide is divided into two major sections. You may take a tour of both sections or directly create an Open Lake Data Output.
 
 1. View only guide
 2. Try it yourself guide
