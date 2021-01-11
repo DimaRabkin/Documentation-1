@@ -29,7 +29,7 @@ The [free Community Edition](https://app.upsolver.com/signup/free) offers limite
 
 ### Run sample queries
 
-![](../../../.gitbook/assets/image%20%28224%29.png)
+![](../../../.gitbook/assets/image%20%28225%29.png)
 
 Upsolver provides you with a pre-populated worksheet that runs queries using Open Lake query engine. Click on **Explore the Quickstart Worksheet** to get started!
 
@@ -90,7 +90,7 @@ Click on **RUN** on the upper right hand corner to see results from these querie
 
 ### Explore sample data source
 
-![](../../../.gitbook/assets/image%20%28225%29.png)
+![](../../../.gitbook/assets/image%20%28226%29.png)
 
 We have pre-created sample data sources used by the queries in the worksheets. You may explore the data sources by clicking on **DATA SOURCES &gt;  Upsolver Tutorial Order Bucket**
 
@@ -121,6 +121,8 @@ Now you might wonder - I have a data source, how do I transform my data and writ
 ![](../../../.gitbook/assets/ueszdjslnc.gif)
 
 ## Process data with Open Lake data output \(try it yourself\)
+
+![](../../../.gitbook/assets/image%20%28224%29.png)
 
 To learn more about Upsolver, let's create a Data Output together. Upsolver offers much more than this Quickstart. [Contact Upsolver ](https://www.upsolver.com/schedule-demo)for a demo or a free POC with more compute power.
 
