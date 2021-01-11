@@ -88,7 +88,7 @@ Click on **RUN** on the upper right hand corner to see results from these querie
 
 ![](../../../.gitbook/assets/image%20%28220%29.png)
 
-The next section will take a look at the Upsolver Data Source that populates the Open Lake environment
+In the next section , we will take a look at the Upsolver Data Source that populates the Open Lake.
 
 ### Explore sample data source
 
