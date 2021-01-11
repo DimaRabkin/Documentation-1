@@ -190,7 +190,7 @@ Click on **PREVIEW** to make sure the data is as expected.
 
 ![](../../../.gitbook/assets/v26cpup8et.gif)
 
-2. Use the slide bar to choose the time window you want to output your data from. Let's choose the data from the past 12 hours for this example. Optionally, you can leave **ENDING AT** as **Never** to continuously stream new data into your Open Lake table. 
+2. Use the slide bar to choose the time window you want to output your data from. The example shows the data from the past 12 hours. Optionally, you can leave **ENDING AT** as **Never** to continuously stream new data into your Open Lake table. 
 
 ![](../../../.gitbook/assets/j1sscks8zv.gif)
 
