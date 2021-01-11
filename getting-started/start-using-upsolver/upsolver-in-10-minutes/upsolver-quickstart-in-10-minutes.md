@@ -14,8 +14,8 @@ When you first log into Upsolver's [free Community Edition](https://app.upsolver
 
 This guide is divided into two major sections. You may take a tour of both sections or directly create an Open Lake data output.
 
-1. Explore pre-built worksheets to look at the pre-defined data source and data output
-2. Create your own data output and perform transformations
+1. View only guide
+2. Try it yourself guide
 
 The sample environment provides you with a pre-created[ ](../../../connecting-data-sources/amazon-aws-data-sources/amazon-s3-data-source/quick-guide-s3-data-source-1.md)[Data Source ](../../../connecting-data-sources/amazon-aws-data-sources/amazon-s3-data-source/quick-guide-s3-data-source-1.md)that continuously parses data from an Amazon S3 bucket. 
 
@@ -25,7 +25,7 @@ The sample Open Lake data output transforms the data and users can query the tra
 The [free Community Edition](https://app.upsolver.com/signup/free) offers limited compute. [Contact Upsolver f](https://www.upsolver.com/schedule-demo)or more compute resources. 
 {% endhint %}
 
-## Explore pre-defined queries, data source and data output
+## Explore pre-defined queries, data source and data output \(view only\)
 
 ### Run sample queries
 
@@ -120,7 +120,7 @@ Now you might wonder - I have a data source, how do I transform my data and writ
 
 ![](../../../.gitbook/assets/ueszdjslnc.gif)
 
-## Process data with Open Lake data output 
+## Process data with Open Lake data output \(try it yourself\)
 
 To learn more about Upsolver, let's create a Data Output together. Upsolver offers much more than this Quickstart. [Contact Upsolver ](https://www.upsolver.com/schedule-demo)for a demo or a free POC with more compute power.
 
