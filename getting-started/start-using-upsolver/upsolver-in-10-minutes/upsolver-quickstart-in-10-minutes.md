@@ -112,7 +112,7 @@ Highlight **Events Over Time** to understand your events demographics.
 
 ![](../../../.gitbook/assets/sqqka7zt0h.gif)
 
-Click [here](../../../connecting-data-sources/data-source-ui-tour.md) to learn more about Upsolver's Data Sources UI.
+Click [here](../../../connecting-data-sources/data-source-ui-tour.md) to learn more about Upsolver's Data Sources UI. Next, we're going to create a Data Output and transform data from the data source.
 
 ## Process data with Open Lake data output \(try it yourself\)
 
