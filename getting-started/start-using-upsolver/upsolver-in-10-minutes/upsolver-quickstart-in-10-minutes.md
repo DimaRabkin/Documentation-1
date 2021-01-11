@@ -35,7 +35,7 @@ Upsolver provides you with a pre-populated worksheet that runs queries using Ope
 
 ![](../../../.gitbook/assets/image%20%28211%29.png)
 
-The following SQL is querying data from `orders` table that's being continuously populated by Upsolver Amazon S3 data source called _**Upsolver Tutorial Orders Bucket**_ 
+The following SQL is querying data from `orders` table that's being continuously populated from Upsolver Amazon S3 data source called _**Upsolver Tutorial Orders Bucket**_ 
 
 {% tabs %}
 {% tab title="Total order amount" %}
