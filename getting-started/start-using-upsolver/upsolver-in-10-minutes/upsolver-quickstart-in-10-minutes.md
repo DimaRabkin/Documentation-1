@@ -10,6 +10,13 @@ When you first log into Upsolver's [free Community Edition](https://app.upsolver
 
 ![](../../../.gitbook/assets/image%20%28221%29.png)
 
+## About this guide
+
+This guide is divided into two major sections. You may take a tour of both sections or directly create an Open Lake data output.
+
+1. Explore pre-built worksheets to look at the pre-defined data source and data output
+2. Create your own data output and perform transformations
+
 The sample environment provides you with a pre-created[ ](../../../connecting-data-sources/amazon-aws-data-sources/amazon-s3-data-source/quick-guide-s3-data-source-1.md)[Data Source ](../../../connecting-data-sources/amazon-aws-data-sources/amazon-s3-data-source/quick-guide-s3-data-source-1.md)that continuously parses data from an Amazon S3 bucket. 
 
 The sample Open Lake data output transforms the data and users can query the transformed data with SQL. 
@@ -18,13 +25,17 @@ The sample Open Lake data output transforms the data and users can query the tra
 The [free Community Edition](https://app.upsolver.com/signup/free) offers limited compute. [Contact Upsolver f](https://www.upsolver.com/schedule-demo)or more compute resources. 
 {% endhint %}
 
+## Explore pre-defined queries, data source and data output
+
 ### Run sample queries
+
+![](../../../.gitbook/assets/image%20%28224%29.png)
 
 Upsolver provides you with a pre-populated worksheet that runs queries using Open Lake query engine. Click on **Explore the Quickstart Worksheet** to get started!
 
 ![](../../../.gitbook/assets/image%20%28211%29.png)
 
-The following SQL is querying data from `orders` table that's being continuously populated by Upsolver data source called Upsolver Tutorial Orders Bucket 
+The following SQL is querying data from `orders` table that's being continuously populated by Upsolver Amazon S3 data source called _**Upsolver Tutorial Orders Bucket**_ 
 
 {% tabs %}
 {% tab title="Total order amount" %}
@@ -79,6 +90,8 @@ Click on **RUN** on the upper right hand corner to see results from these querie
 
 ### Explore sample data source
 
+![](../../../.gitbook/assets/image%20%28225%29.png)
+
 We have pre-created sample data sources used by the queries in the worksheets. You may explore the data sources by clicking on **DATA SOURCES &gt;  Upsolver Tutorial Order Bucket**
 
 ![](../../../.gitbook/assets/zqokde92k8.gif)
@@ -100,6 +113,8 @@ Highlight **Events Over Time** to understand your events demographics.
 Click [here](../../../connecting-data-sources/data-source-ui-tour.md) to learn more about Upsolver's Data Sources UI.
 
 ### Sample data output
+
+![](../../../.gitbook/assets/image%20%28222%29.png)
 
 Now you might wonder - I have a data source, how do I transform my data and write to a table? We can take a look at the pre-built data output by clicking on **OUPUTS &gt; Orders &gt; DEFINITION**. Upsolver provides over _**200 built-in transformation functions**_ to allow you easily transform your raw data. You can explore these functions on your own by creating your own Open Lake data output. \(see next section\) For more information, please click [here](../../../data-outputs-and-data-transformation/data-outputs/).
 
@@ -142,7 +157,7 @@ data.salesTax
 
 ![SQL View](../../../.gitbook/assets/mfgx7vr2ri.gif)
 
-3. Add the following SQL to your pre-generated SQL statement \(note that this aggregation can also be easily performed in the UI instead of SQL\) `data.netTotal + data.salesTax as order_total`on line 11 and `WHERE data.eventType = 'ORDER'` on line 13. The SQL will look like the following after adding these aggregations.
+3. Add the following SQL to your pre-generated SQL statement \(note that this aggregation can also be easily performed in the UI instead of SQL\) `data.netTotal + data.salesTax as order_total`on line 11 and `WHERE data.eventType = 'ORDER'` at the end of the statement. The SQL will look like the following after adding the aggregations and filter.
 
 ```sql
 SET partition_date = UNIX_EPOCH_TO_DATE(time);
