@@ -183,7 +183,7 @@ Click on **PREVIEW** to make sure the data is as expected.
 
 ![](../../../.gitbook/assets/ih3otv15gb.gif)
 
-4. The output will take about 2 minutes to catchup to its current event. After the data is caught up under **PROGRESS**, click on **ERRORS** to make sure everything is successful. Click the **OPEN LAKE** icon on the left menu bar and run a sample query to make sure everything was written properly. e.g. `SELECT * FROM upsolver.sample_data.<your table name> LIMIT 100;`
+4. The output will take about _**2 minutes**_ to catchup to its current event. After the data is caught up under **PROGRESS**, click on **ERRORS** to make sure everything is successful. Click the **OPEN LAKE** icon on the left menu bar and run a sample query to make sure everything was written properly. e.g. `SELECT * FROM upsolver.sample_data.<your table name> LIMIT 100;`
 
 #### Congratulations! You have taken a quick tour of Upsolver.[ Contact us ](https://www.upsolver.com/schedule-demo)to start your Upsolver journey. Happy Upsolving!
 
