@@ -88,6 +88,8 @@ Click on **RUN** on the upper right hand corner to see results from these querie
 
 ![](../../../.gitbook/assets/image%20%28220%29.png)
 
+The next section will take a look at the Upsolver Data Source that feeds the Open Lake environment
+
 ### Explore sample data source
 
 ![](../../../.gitbook/assets/image%20%28226%29.png)
@@ -111,14 +113,6 @@ Highlight **Events Over Time** to understand your events demographics.
 ![](../../../.gitbook/assets/sqqka7zt0h.gif)
 
 Click [here](../../../connecting-data-sources/data-source-ui-tour.md) to learn more about Upsolver's Data Sources UI.
-
-### Sample data output
-
-![](../../../.gitbook/assets/image%20%28222%29.png)
-
-Now you might wonder - I have a data source, how do I transform my data and write to a table? We can take a look at the pre-built data output by clicking on **OUPUTS &gt; Orders &gt; DEFINITION**. Upsolver provides over _**200 built-in transformation functions**_ to allow you easily transform your raw data. You can explore these functions on your own by creating your own Open Lake data output. \(see next section\) For more information, please click [here](../../../data-outputs-and-data-transformation/data-outputs/).
-
-![](../../../.gitbook/assets/ueszdjslnc.gif)
 
 ## Process data with Open Lake data output \(try it yourself\)
 
