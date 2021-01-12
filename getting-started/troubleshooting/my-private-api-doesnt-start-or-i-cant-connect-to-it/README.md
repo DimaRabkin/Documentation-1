@@ -10,6 +10,6 @@ Once the integration is done, it should take up to 5 minutes until the Local API
 * [Security group not open](security-group-not-open.md)
 
 {% hint style="info" %}
-If none of the above applies to your situation, contact us via the intercom widget or by mail: support@upsolver.com.
+If none of the above applies to your situation, please file a ticket via [Upsolver support portal](https://support.upsolver.com/)
 {% endhint %}
 
