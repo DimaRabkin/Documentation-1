@@ -14,7 +14,7 @@ When you first log into Upsolver's [free Community Edition](https://app.upsolver
 
 This guide is divided into two major sections. You may take a tour of both sections or directly create an Open Lake Data Output and start transforming data.
 
-1. [Explore pre-built data lake](https://docs.upsolver.com/upsolver-1/getting-started/start-using-upsolver/upsolver-in-10-minutes/upsolver-quickstart-in-10-minutes#explore-pre-defined-queries-data-source-and-data-output-view-only)
+1. [Explore pre-built data lake](https://docs.upsolver.com/upsolver-1/getting-started/start-using-upsolver/upsolver-in-10-minutes/upsolver-quickstart-in-10-minutes#explore-a-pre-built-data-lake)
 2. [Try it yourself guide](https://docs.upsolver.com/upsolver-1/getting-started/start-using-upsolver/upsolver-in-10-minutes/upsolver-quickstart-in-10-minutes#process-data-with-open-lake-data-output-try-it-yourself)
 
 The sample environment provides you with a pre-created[ ](../../../connecting-data-sources/amazon-aws-data-sources/amazon-s3-data-source/quick-guide-s3-data-source-1.md)[Data Source ](../../../connecting-data-sources/amazon-aws-data-sources/amazon-s3-data-source/quick-guide-s3-data-source-1.md)that continuously parses data from an Amazon S3 bucket. 
