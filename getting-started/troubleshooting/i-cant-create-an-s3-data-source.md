@@ -18,6 +18,6 @@ Enter **`input/a`** in the folder field.
 You can also try setting the **Start Ingestion From** field to a time when there is data.
 
 {% hint style="info" %}
-If neither of these suggestions help, contact us via the intercom or by email: support@upsolver.com.
+If neither of these suggestions help,  please file a ticket via [Upsolver Support Protal](https://support.upsolver.com/hc/en-us).
 {% endhint %}
 

@@ -14,5 +14,5 @@ This topic describes an initial set of troubleshooting steps to take if you're h
 * [Data doesn't appear in Athena table](data-doesnt-appear-in-athena-table.md)
 * [I get an exception when querying my Athena table](i-get-an-exception-when-querying-my-athena-table.md)
 
-If your issue is not covered, contact us via the intercom widget \(in the bottom right corner of the page in Upsolver\) or by email: support@upsolver.com.
+If your issue is not covered, please file a ticket via [Upsolver Support Protal](https://support.upsolver.com/hc/en-us).
 
