@@ -4,7 +4,34 @@ description: This article tracks the changes and updates to Upsolver.
 
 # Change log
 
+## 2021
+
+### 2021/01/04
+
+* Snowflake Output: Configurable DbDecimal
+* CSV Content Type: Don't ignore values starting with \#
+* SQL: Support unmapped columns in JDBC outputs. New mapped columns will be created when deploying the output
+* Infra: performacne improvements
+* Lookup Table: fixed a bug when using Delete column
+* Singup: Create sample data source on register
+* SQL: Fixed a bug with autocomplete Lookup Table names
+* SQL: Support Lookup time
+* Athena Output: Fixed a bug with editing Athena Output when Upsert Partition Fields is true
+
 ## 2020
+
+### 2020/12/08
+
+* JDBC Data Sources: Fixed an issue that could cause it to get stuck and not read any data
+* JDBC Connections: Fixed an issue that would allow connections to be created with a concurrency of 0
+* Monitoring: Include the actual time an index is ready to be read form in the monitoring delay charts \*
+* Allow using anonymous credentials to access data in public S3 bucketsA
+* AppFlow: Autocomplete buckets and flow names during setup
+* Functions:
+  * Added a Subtract Time Zone Feature to complement Add Time Zone
+* UI:
+  * Show SQL Errors when deploying Outputs
+  * Show indicative error message when Reference Data file couldn't be found
 
 ### 2020/11/01
 
