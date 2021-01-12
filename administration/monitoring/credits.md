@@ -37,7 +37,7 @@ A list of the credit packages purchased.
 
 1. On the **Credits** page, click **Purchase Credits**.
 
-2. Send Upsolver a message on Intercom. Upsolver will typically reply within a few minutes.
+2. File a ticket on Zendesk. Upsolver will typically reply within a few minutes.
 
 ## Download a credits report
 
