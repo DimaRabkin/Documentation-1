@@ -31,9 +31,9 @@ The [free Community Edition](https://app.upsolver.com/signup/free) offers limite
 
 ![](../../../.gitbook/assets/image%20%28225%29.png)
 
-Upsolver provides you with a pre-populated worksheet that runs queries using Open Lake query engine. Click on **Explore the Quickstart Worksheet** to get started!
+Upsolver provides you with a pre-populated worksheet that runs queries using Open Lake query engine. Click on [**Explore the Quickstart Worksheet** ](https://integ.upsolver.com/openlake)to get started!
 
-![](../../../.gitbook/assets/image%20%28211%29.png)
+![](../../../.gitbook/assets/image%20%28229%29.png)
 
 The following SQL is querying data from `orders` table that's being continuously populated from Upsolver Amazon S3 data source called _**Upsolver Tutorial Orders Bucket**_ 
 
