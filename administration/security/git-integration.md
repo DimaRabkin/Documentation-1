@@ -8,7 +8,7 @@ description: >-
 
 You can integrate Upsolver with your Git repository with one click. All Upsolver configurations, objects and metadata are synced to your repository in real-time.
 
-If you're not hosting your repository in GitHub or GitLab, please contact us by clicking the Intercom widget in the bottom right corner of this page.
+If you're not hosting your repository in GitHub or GitLab, please contact us by filing a ticket via Zendesk.
 
 ## Add an SSH key to a GitHub repository
 
