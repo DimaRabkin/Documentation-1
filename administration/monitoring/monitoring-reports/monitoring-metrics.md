@@ -68,6 +68,7 @@ description: >-
 | **upsolver.output.written-items** | Number of items written to the output destination |
 | **upsolver.output.written-bytes** | The number of bytes written to the output destination |
 | **upsolver.output.delay** | Output delay |
+| **upsolver.output.min-delay** | Output minimum delay. This can be used as a filter for the delay metric |
 | **upsolver.output.data-transformation.handled-items** | Number of items \(records\) handled during output processing \(relevant only Databases and streams outputs\) |
 | **upsolver.output.data-transformation.handled-bytes** | Number of bytes handled during output processing \(relevant only Databases and streams outputs\) |
 | **upsolver.output.data-transformation-delay.delay** | Delay during output processing \(relevant only Databases and streams outputs\) |
