@@ -28,7 +28,7 @@ You can also use Upsolver through [AWS Marketplace](https://aws.amazon.com/marke
 
 2. Enter your contact details and click **SIGN UP**. An email message will be sent to the email account specified for verification.
 
-![](../.gitbook/assets/image%20%28245%29.png)
+![](../.gitbook/assets/image%20%28249%29.png)
 
 3. When you log in, you may choose between deploying in Amazon AWS or Microsoft Azure
 
@@ -36,17 +36,23 @@ If you don’t have access to your AWS or Azure account, you can [**send the pag
 
 4. You may choose between **Deploy to My AWS Account** which deploys Upsolver in your own VPC or **Multi-Tenant Deployment** - Upsolver hosts and manages the compute.  Click [here](upsolver-concepts/deployment-models.md) for more information. If you don't have administrative access, click on [SEND THIS PAGE](https://docs.upsolver.com/upsolver-1/getting-started/try-upsolver#send-this-page).  Make sure you allow appropriate access to your AWS account and click **CONTINUE**.
 
-![](../.gitbook/assets/image%20%28243%29.png)
+![](../.gitbook/assets/image%20%28244%29.png)
 
 5. In the **AWS CloudFormation page**, check the **I acknowledge** statement and click **Create Stack**.
 
-![](../.gitbook/assets/image%20%28244%29.png)
+![](../.gitbook/assets/image%20%28246%29.png)
 
 7. Once the stack is successfully created \(this will take a couple of minutes; you will see that the status of your stack says `CREATE_COMPLETE` once it is finished\), the **Integration Completed** message appears in Upsolver.
 
-8. Click **Done**.
+![](../.gitbook/assets/image%20%28243%29.png)
 
-You can now work in Upsolver.
+8. It will take a few moments for Upsolver to deploy the cluster to your VPC.
+
+![](../.gitbook/assets/image%20%28245%29.png)
+
+9. Once you see the screen below, the deployment is complete. Happy Upsolving!
+
+![](../.gitbook/assets/image%20%28248%29.png)
 
 ## Send this page <a id="send-this-page"></a>
 
