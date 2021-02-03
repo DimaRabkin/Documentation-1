@@ -148,7 +148,7 @@ curl -X POST -H "content-type: application/json" -H
 	"globFilePattern" : "globFilePattern",
 	"datePattern" : "yyyy/MM/dd/HH/mm",
 	"contentType" : {
-		"type" : "JsonContentType"
+		"clazz" : "JsonContentType"
 	},
 	"compression" : {
 		"clazz" : "AutoDetectCompression"
