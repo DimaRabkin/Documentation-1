@@ -137,7 +137,7 @@ A prerequisite for defining a cloud storage data source is providing Upsolver wi
   </tbody>
 </table>
 
-#### Example
+#### Example 1
 
 ```bash
 curl -X POST -H "content-type: application/json" -H 
@@ -160,6 +160,35 @@ S3 data source"
 	},
 	"softRetention" : true
 }' "https://api.upsolver.com/inputs/DATA-SOURCE-ID"
+```
+
+#### Example 2
+
+```bash
+curl 
+-X POST 
+-H "content-type: application/json" 
+-H "Authorization: token" 
+-d '{"clazz":"QuickS3StorageInputRequest", 
+     "bucket": "upsolver-tutorials-orders", 
+     "globFilePattern": "*", 
+     "datePattern": "yyyy/MM/dd/HH", 
+     "prefix": "data/", 
+     "contentType":
+                  {
+                     "clazz": "JsonContentType"
+                  }, 
+     "compression": 
+                  {
+                     "clazz": "AutoDetectCompression"
+                  }, 
+     "displayData": 
+                  {
+                     "name": "API test data source", 
+                     "description": "Description of first Amazon S3 data source"}, 
+                     "softRetention":false
+                  }' 
+      "https://your-api.upsolver.com/inputs/"
 ```
 
 ## Amazon S3 \(Advanced\)
