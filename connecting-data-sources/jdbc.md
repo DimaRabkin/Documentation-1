@@ -21,6 +21,20 @@ Upsolver supports uploading data from the following JDBC sources:
 * Snowflake
 * Oracle
 
+Other databases can also be added. Please [contact Upsolver](https://www.upsolver.com/contact).
+
+## JDBC data source connector CDC support
+
+The JDBC data source has 3 operating modes for determining changes.
+
+1. **By a timestamp column**
+2. **By an auto-incrementing key**
+3. **Capture the entire table periodically** \(mainly used for loading reference data periodically\)
+
+Mode \#1 and \#2 require the table contain a column that Upsolver can query from to detect new changes. The column must be updated every time Upsolver reads the change to the given row. A combination of both modes can be used as well.
+
+The JDBC data source default behavior performs a full initial load followed by incremental updates. 
+
 ## Create a JDBC data source
 
 1. From the **Data Sources** page, click New.
