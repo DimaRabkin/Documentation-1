@@ -25,7 +25,7 @@ Other databases can also be added. Please [contact Upsolver](https://www.upsolve
 
 ## JDBC data source connector CDC support
 
-The JDBC data source has 3 operating modes for determining changes.
+The JDBC data source has three operating modes for determining changes.
 
 1. **By a timestamp column**
 2. **By an auto-incrementing key**
