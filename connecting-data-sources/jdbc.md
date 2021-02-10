@@ -29,7 +29,7 @@ The JDBC data source has three operating modes for determining changes.
 
 1. **By a timestamp column**
 2. **By an auto-incrementing key**
-3. **Capture the entire table periodically** \(mainly used for loading reference data periodically\)
+3. **Capture the entire table periodically** \(can be used for loading reference data periodically\)
 
 Mode 1 and 2 require the table containing a column that Upsolver can query from to detect new changes. The column must be updated every time Upsolver reads the change to the given row. A combination of both mode 1 and mode 2 can be used together as well.
 
