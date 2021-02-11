@@ -29,9 +29,9 @@ The **Single Sign On URL** and the **Audience URI** can both be found by navigat
 
 | Name | Value |
 | :--- | :--- |
-| **email** | **usermail** |
-| **firstName** | **userfirstName** |
-| **lastName** | **userlastName** |
+| **email** | **user.email** |
+| **firstName** | **user.firstName** |
+| **lastName** | **user.lastName** |
 
 9. In **Group Attribute Statements**, enter the following in the **Name** and **Value** fields respectively:
 
