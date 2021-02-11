@@ -88,5 +88,3 @@ Keep in mind that everything written in SQL will be automatically translated in 
 
 ## What’s next?
 
-{% page-ref page="../../../../getting-started/tutorials-and-faq/tutorials/combining-data-from-multiple-sources.md" %}
-

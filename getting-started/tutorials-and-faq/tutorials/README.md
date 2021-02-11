@@ -4,8 +4,6 @@ description: This page links to both written and video Upsolver tutorials.
 
 # Tutorials
 
-{% page-ref page="combining-data-from-multiple-sources.md" %}
-
 {% page-ref page="joining-multiple-data-streams-for-real-time-analytics.md" %}
 
 {% page-ref page="using-upsolver-to-index-less-data-into-splunk.md" %}
