@@ -6,8 +6,8 @@
 
 * [Try Upsolver for free](getting-started/try-upsolver.md)
 * [Get started as a Upsolver user](getting-started/start-using-upsolver/README.md)
-  * [Upsolver in 10 minutes](getting-started/start-using-upsolver/upsolver-in-10-minutes/README.md)
-    * [Upsolver Quickstart in 10 Minutes](getting-started/start-using-upsolver/upsolver-in-10-minutes/upsolver-quickstart-in-10-minutes.md)
+  * [Upsolver in 5 minutes](getting-started/start-using-upsolver/upsolver-in-10-minutes/README.md)
+    * [Upsolver Quickstart in 5 Minutes](getting-started/start-using-upsolver/upsolver-in-10-minutes/upsolver-quickstart-in-10-minutes.md)
     * [Amazon Athena data output](getting-started/start-using-upsolver/upsolver-in-10-minutes/amazon-athena-output-option.md)
     * [MySQL \(AWS RDS\) data output](getting-started/start-using-upsolver/upsolver-in-10-minutes/mysql-aws-rds-data-output.md)
     * [Local MySQL data output](getting-started/start-using-upsolver/upsolver-in-10-minutes/mysql-data-output-option.md)

@@ -5,7 +5,7 @@ description: >-
   loads to a target analytics system.
 ---
 
-# Upsolver in 10 minutes
+# Upsolver in 5 minutes
 
 You have multiple options for this tutorial. The local machine option does not require you to have access to an AWS environment.
 
