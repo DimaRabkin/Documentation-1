@@ -180,7 +180,7 @@ Individual Avro records without the framing or schema.
 }
 ```
 
-## Avrow/ Schema Registry
+## Avro w/ Schema Registry
 
 Individual Avro records with schema provided by Schema Registry.
 
