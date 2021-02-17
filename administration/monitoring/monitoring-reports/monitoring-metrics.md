@@ -81,4 +81,5 @@ description: >-
 | **upsolver.upsolver\_compute\_units.value** | The amount of Upsolver units used in a cluster |
 | **upsolver.compute\_units.value** | The amount of compute units used in a cluster |
 | **upsolver.environment\_utilization.value** | The average CPU load of all the servers in a cluster |
+| **upsolver.memory.memory** | Memory usage per server |
 
