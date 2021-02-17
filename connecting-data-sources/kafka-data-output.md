@@ -166,7 +166,7 @@ If necessary, configure the content format options.
 **See:** [Data formats](../getting-started/glossary/data-formats.md)
 {% endhint %}
 
-Optional: Connect to schema registry by choosing the `Avro w/ Schema Registry` option from from  `CONTENT FORMAT` Use the URL to retrieve schema from the schema registry in the URL box  `https://my.schema.registry.upsolver.com/schema/{id}`
+Optional: Connect to schema registry by choosing the `Avro w/ Schema Registry` option from from  `CONTENT FORMAT` Use the URL to retrieve schema from the schema registry in the URL box  `https://my.schema.registry.upsolver.com/schema/{id}`Upsolver also supports `Tagged Avro schema repository.`
 
 17. From the dropdown, select a **compute cluster** \(or [create a new one](../administration/managing-clusters/cluster-types/adding-a-compute-cluster.md)\) to run the calculation on. 
 
